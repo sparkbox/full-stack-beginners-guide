@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn Dotfiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/colors.css" rel="stylesheet">
+    <link href="styles/units.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                    <li><a href="index.html" 
+                            class="header__link"
+                            aria-label="visit the topics page to something new">
+                            Topics
+                    </a></li>
+                    <li><a href="outcomes.html" 
+                            class="header__link"
+                            aria-label="visit the outcomes page to find out why I made this">
+                            Outcomes
+                    </a></li>
+                    <li><a href="connect.html"
+                            class="header__link"
+                            aria-label="visit the connect page to find ways to connect to the online web development community">
+                            Connect
+                    </a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="subject">
+        <h1 class="subject__title subject__title--secondary">Dotfiles</h1>
+        <section class="subject__section subject__section--grey">
+            <h2 class="subject__subtitle">
+                Summary
+            </h2>
+            <h4 class="subject__sub-section">
+                What & Why
+            </h4>
+            <p class="subject__p">
+                A dotfile is any file that starts with a dot. They are where all of your <strong>configurations for your computer</strong> are stored. Sometimes 
+                your machine may come with dotfiles, sometimes you will have to create the files yourself. They are usually in a shell command language.
+                My examples will be for the Bash shell language.
+            </p>
+            <h4 class="subject__sub-section">
+                Aliases
+            </h4>
+            <p class="subject__p">
+                Aliases are commands assigned to custom shortcuts. They follow a very specific syntax
+                <code class="subject__p-list-item-code">alias <em>shortcut</em>="<em>command</em>"</code>. You can make 
+                one directly in the command line, but to create a permanent alias, put it in an alias dotfile, .aliases,
+                and link that to your main dotfile. This is in my .bashrc and links my other dotfiles, since .bashrc, is the file
+                the computer runs. 
+                <code class="subject__p-list-item-code">
+                for file in ~/.{path,bash_prompt,aliases,functions}; do
+  	                [ -r "$file" ] && [ -f "$file" ] && source "$file";
+                done;
+                unset file;
+            </code>
+            </p>
+            <h4 class="subject__sub-section">
+                Functions
+            </h4>
+            <p class="subject__p">
+                Functions are similar to aliases. You set them in a dotfile, and they consist of creating shortcuts to run a command. Yet,
+                functions can be more complex than aliases, and perform multple actions. They have a similar syntax to functions in JS.
+                <code class="subject__p-list-item-code">function <em>name</em>() { <em>commands</em> }</code>.
+            </p>
+        </section>
+        <section class="subject__section">
+            <h2 class="subject__subtitle">
+                Resources
+            </h2>
+            <ul class="subject__resources">
+                <li>
+                    <a href="https://dotfiles.github.io/" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        GitHub Dotfiles Guide
+                        <span class="subject__resource-type">
+                              Examples & Resources: 15min
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/mathiasbynens/dotfiles" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        Mathias Dotfiles
+                        <span class="subject__resource-type">
+                            Example: 5min
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jonsuh.com/blog/bash-command-line-shortcuts/" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        Aliases
+                        <span class="subject__resource-type">
+                            Read: 5min
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        Getting Started with Dotfiles
+                        <span class="subject__resource-type">
+                            Read: 15min
+                        </span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        Functions
+                        <span class="subject__resource-type">
+                            Example: 5min
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        .bash_profile vs .bashrc
+                        <span class="subject__resource-type">
+                            Read: 5min
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.codecademy.com/articles/command-line-commands" target="_blank" class="subject__resource-link subject__resource-link--secondary">
+                        Command Line Commands
+                        <span class="subject__resource-type">
+                            Cheat sheet/Read: 10min
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="subject__section subject__section--grey subject__section--functions">
+            <h2 class="subject__subtitle subject__subtitle--cheatsheet">
+                Cheat Sheet
+            </h2>
+            <h4 class="subject__sub-section subject__subtitle--cheatsheet">
+                Aliases
+            </h4>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias c="clear"</code>
+                </div>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias ll="ls -lha"</code>
+                </div>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias rbash="source ~/.bashrc"</code>
+                </div>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias gs="git status"</code>
+                </div>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias ga="git add"</code>
+                </div>
+                <div class="subject__code-wrapper subject__code--alias">
+                    <code class="subject__code">alias gc="git commit -m"</code>
+                </div>
+            <h4 class="subject__sub-section subject__subtitle--cheatsheet">
+                Functions
+            </h4>
+                <div class="subject__code-wrapper subject--functions">
+                    <code class="subject__code subject__code--functions"># make a directory and go to it
+    function mkd () {
+        mkdir -p "$@" && cd "$@"
+    }</code>
+                </div>
+                <div class="subject__code-wrapper subject--functions">
+                        <code class="subject__code subject__code--functions"># go to the directory and list out the contents
+    function cl () {
+        cd $@ && ls -la
+    }</code>
+                    </div>
+                    <div class="subject__code-wrapper code_fill-width">
+                            <code class="subject__code subject__code--functions"># congratulate yourself with a happy dance
+    function happydance {
+        echo '
+            ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓
+        '
+     }</code>
+                        </div>
+        </section>
+        <section class="subject__section subject__section">
+            <h2 class="subject__subtitle">
+                Projects to Complete
+            </h2>
+            <h4 class="subject__sub-section subject__sub-section--underline">
+                Create your own dotfiles
+            </h4>
+            <p class="subject__p">
+                Check out some of the example resources, and start creating your own aliases and 
+                functions. Start small, add new ones as you work on projects, and don't be afraid
+                to be creative. If using bash, you will want a <code class="subject__p-list-item-code">.bashrc</code>, 
+                <code class="subject__p-list-item-code">.bash_profile</code>, <code class="subject__p-list-item-code">.bash_prompt</code>,
+                <code class="subject__p-list-item-code">.aliases</code>, <code class="subject__p-list-item-code">.functions</code>
+            </p>
+            <h4 class="subject__sub-section subject__sub-section--underline">
+                Create a dotfiles repo
+            </h4>
+            <p class="subject__p">
+                Create a repo on GitHub or any other similar service, and add your dotfiles to the repo. 
+                Then you will be able to pull them down for any new system you're on, and you can practice commits.
+            </p>
+            <p>For Help Visit 
+                <a href="https://github.community/" target="_blank" class="subject__link subject__link--secondary">
+                    the GitHub Community Forum
+                </a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+$c-dark: #444;
+$c-grey-blue: #7d9bdc;
+
+$colors: (
+    primary: #7e7ee6,
+    secondary: #60ce72,
+    tertiary: #0fa6e6,
+    quaternary: #18c9b1,
+);
+
+@each $name, $hex in $colors {
+    .topic--#{$name} {
+        border-color: $hex;
+    }
+    .topic__title--#{$name} {
+        color: $hex;
+    } 
+    .topic__link--#{$name} {
+        &:after {
+            background-color: $hex;
+        }
+        &:hover {
+            color: $hex;   
+        }
+    }
+    .subject__title--#{$name} {
+        color: $hex;
+    }
+    .subject__resource-link--#{$name} {
+            color: $hex;
+            border: 2px solid $hex;
+        &:hover {
+            border: 2px solid $hex;
+            color: #fff;
+            background-color: $hex;
+        }
+    }
+    .subject__link--#{$name} {
+        color: $hex;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul li {
+    color: $c-dark;
+}
+
+.header__link:after {
+    background-color: lighten($c-grey-blue, 10%);
+}
+
+.filter__btn {
+        background-color: $c-grey-blue;
+        border: 3px solid $c-grey-blue;
+        color: lighten($c-grey-blue, 100%);
+    &:hover {
+        border: 3px solid $c-dark;
+    }
+    &:focus {
+        border: 3px solid $c-dark;
+        background-color: $c-dark;
+        color:  lighten($c-dark, 100%);
+        outline: none;
+    }
+}
+
+.subject__section--grey {
+    background-color: lighten($c-dark, 70%);
+}
+
+.subject__link:hover {
+    color: $c-dark;
+}
+
