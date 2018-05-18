@@ -1,0 +1,58 @@
+/* GENERAL
+============================ */
+h1, h2, h3, h4, h5, h6, p, a, ul li {
+  color: #444; }
+
+::selection {
+  background: #444;
+  color: #fff; }
+
+.header__link:after {
+  background-color: #a8a8ee; }
+
+/* HOME PAGE
+============================ */
+.includes__item {
+  color: #444; }
+  .includes__item::before {
+    background-color: #7d7de6; }
+
+.topic {
+  box-shadow: 2px 10px 6px -6px rgba(0, 0, 0, 0.2);
+  border-color: #e2e2e2; }
+  .topic__title {
+    color: #7d7de6; }
+  .topic__link:after {
+    background-color: #7d7de6; }
+  .topic__link:hover {
+    color: #7d7de6; }
+
+.topic__list--item {
+  color: #5e5e5e; }
+
+/* LANDING PAGES
+============================ */
+.subject__title--primary {
+  color: #7d7de6; }
+
+.subject__resource-link--primary {
+  color: #7d7de6;
+  border: 2px solid #7d7de6; }
+  .subject__resource-link--primary:hover {
+    border: 2px solid #7d7de6;
+    color: #fff;
+    background-color: #7d7de6; }
+
+.subject__link--primary {
+  color: #7d7de6; }
+
+.subject__section--grey {
+  background-color: #f7f7f7; }
+
+.subject__link:hover {
+  color: #444; }
+
+.subject__sub-section--underline {
+  border-left: 4px solid #444; }
+
+/*# sourceMappingURL=colors.css.map */

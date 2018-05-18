@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn A11y</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                    <li><a href="index.html" 
+                            class="header__link"
+                            aria-label="visit the topics page to something new">
+                            Topics
+                    </a></li>
+                    <li><a href="outcomes.html" 
+                            class="header__link"
+                            aria-label="visit the outcomes page to find out why I made this">
+                            Outcomes
+                    </a></li>
+                    <li><a href="connect.html"
+                            class="header__link"
+                            aria-label="visit the connect page to find ways to connect to the online web development community">
+                            Connect
+                    </a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="wrapper wrapper__default">
+        <h1 class="subject__title subject__title--primary">Accessibility</h1>
+        <section class="subject__section subject__section--grey">
+            <h2 class="subject__subtitle">
+                Summary
+            </h2>
+            <h4 class="subject__sub-section">
+                Visual
+            </h4>
+            <p class="subject__p">
+                Color contrast, typography, spacing, and boldness contribute to visual accessibility. When 
+                creating your website be sure to test color contrast, choose a readable font, make headers 
+                bold, and set readable letter-spacing and line-height.
+            </p>
+            <h4 class="subject__sub-section">
+                Screen Readers
+            </h4>
+            <p class="subject__p">
+                Keep in mind what it would be like to navigate your website with a screen reader. Are all 
+                the links easily accessed? Can you tab through the content? Do all of your links and buttons
+                have aria-labels? Keep these questions in mind as your read through the external resources.
+            </p>
+        </section>
+        <section class="subject__section subject__section--resources">
+            <div class="resources-wrapper">
+                <h2 class="subject__subtitle">
+                    External Resources
+                </h2>
+                <ul class="subject__resources">
+                    <li>
+                        <a href="https://seesparkbox.com/foundry/accessible_by_design" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            A11y By Design
+                            <span class="subject__resource-type">
+                                Reading: 15min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Aria Labels
+                            <span class="subject__resource-type">
+                                Reading: 10min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://webaim.org/techniques/forms/advanced" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Form Labels
+                            <span class="subject__resource-type">
+                                Reading: 20min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://webaim.org/techniques/forms/controls" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Form Controls
+                            <span class="subject__resource-type">
+                                Reading: 20min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3.org/WAI/tutorials/images/tips/" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Images
+                            <span class="subject__resource-type">
+                                Reading: 15min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://usecontrast.com/guide" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Contrast Guide
+                            <span class="subject__resource-type">
+                                Reading: 15min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://internetingishard.com/html-and-css/semantic-html/" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Semantic HTML
+                            <span class="subject__resource-type">
+                                Reading: 15min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://pa11y.org/" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Pa11y
+                            <span class="subject__resource-type">
+                                Tool: 5min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://colorable.jxnblk.com/" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Contrast Ratio
+                            <span class="subject__resource-type">
+                                Tool: 5min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://a11yproject.com/resources" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            A11y Project Resources
+                            <span class="subject__resource-type">
+                                Reading: 5min
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" target="_blank" 
+                        class="subject__resource-link subject__resource-link--primary">
+                            Extending Semantic HTML
+                            <span class="subject__resource-type">
+                                Reading: 20min
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subject__section subject__section--grey">
+            <h2 class="subject__subtitle">
+                CheatSheet
+            </h2>
+                <div class="subject__code-wrapper">
+                    <code class="subject__code">aria-label="Explain where a link will take someone"</code>
+                </div>
+                <div class="subject__code-wrapper">
+                    <code class="subject__code">aria-expanded="true"</code>
+                </div>
+                <div class="subject__code-wrapper">
+                    <code class="subject__code">alt="Explain what your picture is showing"></code>
+                </div>
+        </section>
+        <section class="subject__section">
+            <h2 class="subject__subtitle">
+                Projects to Complete
+            </h2>
+            <h4 class="subject__sub-section subject__sub-section--underline">
+                Test a Website
+            </h4>
+            <p class="subject__p">
+                Choose a website you use the most, and try to tab through it. Then use a screen reader to 
+                go through the website. This will help you understand what is best when building a website,
+                and making it accessible.
+            </p>
+            <h4 class="subject__sub-section subject__sub-section--underline">
+                 Create an accessible website feature on CodePen
+            </h4>
+            <p class="subject__p">
+                Choose a website feature such as a form, a hamburger menu, an FAQ section etc. Use semantic HTML, 
+                then style it with acceptable contrasting colors, and a readable font. Then make sure to add
+                accessibile features such as aria-labels on links and alt tags on images.
+            </p>
+            <p>For Help Visit 
+                <a href="https://github.community/" target="_blank"
+                   class="subject__link subject__link--primary"
+                   aria-label="Post a question or see what others asked">
+                    the GitHub Community Forum
+                </a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

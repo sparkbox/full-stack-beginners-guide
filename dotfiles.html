@@ -33,7 +33,7 @@
     </header>
 
     <main class="subject">
-        <h1 class="subject__title subject__title--secondary">Dotfiles</h1>
+        <h1 class="subject__title subject__title--primary">Dotfiles</h1>
         <section class="subject__section subject__section--grey">
             <h2 class="subject__subtitle">
                 Summary
@@ -71,69 +71,65 @@
                 <code class="subject__p-list-item-code">function <em>name</em>() { <em>commands</em> }</code>.
             </p>
         </section>
-        <section class="subject__section">
-            <h2 class="subject__subtitle">
-                Resources
-            </h2>
-            <ul class="subject__resources">
-                <li>
-                    <a href="https://dotfiles.github.io/" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        GitHub Dotfiles Guide
-                        <span class="subject__resource-type">
-                              Examples & Resources: 15min
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathiasbynens/dotfiles" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        Mathias Dotfiles
-                        <span class="subject__resource-type">
-                            Example: 5min
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://jonsuh.com/blog/bash-command-line-shortcuts/" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        Aliases
-                        <span class="subject__resource-type">
-                            Read: 5min
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        Getting Started with Dotfiles
-                        <span class="subject__resource-type">
-                            Read: 15min
-                        </span>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        Functions
-                        <span class="subject__resource-type">
-                            Example: 5min
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        .bash_profile vs .bashrc
-                        <span class="subject__resource-type">
-                            Read: 5min
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.codecademy.com/articles/command-line-commands" target="_blank" class="subject__resource-link subject__resource-link--secondary">
-                        Command Line Commands
-                        <span class="subject__resource-type">
-                            Cheat sheet/Read: 10min
-                        </span>
-                    </a>
-                </li>
-            </ul>
+        <section class="subject__section subject__section--resources">
+            <div class="resources-wrapper">
+                <h2 class="subject__subtitle">
+                    Resources
+                </h2>
+                <ul class="subject__resources">
+                    <li>
+                        <a href="https://dotfiles.github.io/" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            GitHub Dotfiles Guide
+                            <span class="subject__resource-type">Examples & Resources</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathiasbynens/dotfiles" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Mathias Dotfiles
+                            <span class="subject__resource-type">Example</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jonsuh.com/blog/bash-command-line-shortcuts/" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Aliases
+                            <span class="subject__resource-type">Read</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Getting Started with Dotfiles
+                            <span class="subject__resource-type">Read</span>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="https://github.com/ashleynolan/dotfiles/blob/master/.functions" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Functions
+                            <span class="subject__resource-type">
+                                Example
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            .bash_profile vs .bashrc
+                            <span class="subject__resource-type">Read</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.codecademy.com/articles/command-line-commands" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Command Line Commands
+                            <span class="subject__resource-type">Cheat sheet/Read</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://devhints.io/bash" target="_blank" class="subject__resource-link subject__resource-link--primary">
+                            Bash Scripting Cheat Sheet
+                            <span class="subject__resource-type">Cheat sheet/Read</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="subject__section subject__section--grey subject__section--functions">
             <h2 class="subject__subtitle subject__subtitle--cheatsheet">
@@ -178,9 +174,7 @@
                     <div class="subject__code-wrapper code_fill-width">
                             <code class="subject__code subject__code--functions"># congratulate yourself with a happy dance
     function happydance {
-        echo '
-            ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓
-        '
+        echo ' ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓'
      }</code>
                         </div>
         </section>
@@ -206,7 +200,7 @@
                 Then you will be able to pull them down for any new system you're on, and you can practice commits.
             </p>
             <p>For Help Visit 
-                <a href="https://github.community/" target="_blank" class="subject__link subject__link--secondary">
+                <a href="https://github.community/" target="_blank" class="subject__link subject__link--primary">
                     the GitHub Community Forum
                 </a>
             </p>

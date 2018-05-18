@@ -60,13 +60,13 @@ ul li {
   height: calc( 1 / 2rem ); }
 
 .header__menu li:nth-child(1) .header__link:hover:after {
-  transform: translate(0.6em, 0em); }
+  transform: translate(0.6em, 0.15em); }
 
 .header__menu li:nth-child(2) .header__link:hover:after {
-  transform: translate(1.6em, 0em); }
+  transform: translate(1.6em, 0.15em); }
 
 .header__menu li:nth-child(3) .header__link:hover:after {
-  transform: translate(1em, 0em); }
+  transform: translate(1em, 0.15em); }
 
 .subject__sub-section {
   margin: 3rem 0 1rem; }
