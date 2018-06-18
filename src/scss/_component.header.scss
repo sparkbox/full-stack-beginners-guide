@@ -1,0 +1,85 @@
+.header {
+  height: 4rem;
+  width: 110%;
+  margin: -0.5rem;
+  background-color: $c-grey;
+
+  @media (min-width: 50rem) {
+    width: 100%;
+    background-color: transparent;      
+  }
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__menu {
+    width: 100%;
+    list-style: none;
+    float: right;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+
+    @media (min-width: 50rem) {
+      max-width: 20rem;
+    }
+
+    & li {
+      float: left;
+      width: 31%;
+      text-align: center;
+
+      @media (min-width: 50rem) {
+        padding: 0 4%;
+        width: 25%;
+      }
+    }
+
+    & li:nth-child(1) .header__link:hover::after {
+      transform: translate(0.6em, 0.15em);
+    }
+
+    & li:nth-child(2) .header__link:hover::after {
+      transform: translate(1.6em, 0.15em);
+    }
+
+    & li:nth-child(3) .header__link:hover::after {
+      transform: translate(1em, 0.15em);
+    }
+  }
+
+  &__link {
+    font-size: $font-xxs;
+    position: relative;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: $c-white;
+
+    @media (min-width: 50rem) {
+      color: $c-grey;
+
+    }
+    
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      bottom: -25%;
+      z-index: -1;
+      width: 100%;
+      transition: all 200ms linear;
+      height: 0.25rem;
+      background-color: lighten($c-grey, 10%);
+    }
+
+    &:hover::after {
+      width: $font-xl;
+      height: $font-xl; 
+      border-radius: 50%;
+    }
+  }
+}

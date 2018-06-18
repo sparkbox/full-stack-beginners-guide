@@ -4,7 +4,8 @@
   "description": "__pages__",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass src/scss/ -o dist/css/ --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/corinneling/learn-web-stuff#readme",
   "devDependencies": {
     "pa11y": "^5.0.4"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.0"
   }
 }

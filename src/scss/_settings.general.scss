@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul li {
+    color: $c-grey;
+}
+
+::selection {
+    background: $c-grey;
+    color: $c-white;
+}
+
+.main {
+  margin: 0.5rem;
+  max-width: 100rem;
+
+  @media (min-width: 50rem) { 
+    margin: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+// keyframes
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatey(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}
