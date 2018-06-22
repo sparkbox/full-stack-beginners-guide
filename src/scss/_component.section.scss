@@ -33,18 +33,18 @@
       color: $c-dark;
     }
     &--primary {
-      color: $c-primary;
+      color: $c-purple;
     }
   }
 }
 
 .subject__resource-link--primary {
-    color: $c-primary;
-    border: 2px solid $c-primary;
+    color: $c-purple;
+    border: 2px solid $c-purple;
     &:hover {
-        border: 2px solid $c-primary;
+        border: 2px solid $c-purple;
         color: $c-light;
-        background-color: $c-primary;
+        background-color: $c-purple;
     }
 }
 

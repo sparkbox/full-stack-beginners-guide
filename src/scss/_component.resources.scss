@@ -52,6 +52,46 @@
       background-color: #7d7de6;
       box-shadow: 0px 14px 6px -8px rgba(126, 126, 230, 0);
     }
+
+    &--lava {
+      color: $c-red;
+      border: 2px solid $c-red;
+
+      &:hover {
+        border: 2px solid $c-red;
+        background-color: $c-red;
+      }
+    }
+
+    &--sunflower {
+      color: $c-yellow;
+      border: 2px solid $c-yellow;
+
+      &:hover {
+        border: 2px solid $c-yellow;
+        background-color: $c-yellow;
+      }
+    }
+
+    &--rose {
+      color: $c-pink;
+      border: 2px solid $c-pink;
+
+      &:hover {
+        border: 2px solid $c-pink;
+        background-color: $c-pink;
+      }
+    }
+
+    &--ocean {
+      color: $c-teal;
+      border: 2px solid $c-teal;
+
+      &:hover {
+        border: 2px solid $c-teal;
+        background-color: $c-teal;
+      }
+    }
   }
 
   &__meta {

@@ -3,220 +3,120 @@
 <head>
     <title>Learn WordPress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="dist/css/main.css" rel="stylesheet">
 </head>
-<body class="body">
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                    <li><a href="index.html" 
-                            class="header__link"
-                            aria-label="visit the topics page to something new">
-                            Topics
-                    </a></li>
-                    <li><a href="outcomes.html" 
-                            class="header__link"
-                            aria-label="visit the outcomes page to find out why I made this">
-                            Outcomes
-                    </a></li>
-                    <li><a href="connect.html"
-                            class="header__link"
-                            aria-label="visit the connect page to find ways to connect to the online web development community">
-                            Connect
-                    </a></li>
-                </ul>
-        </nav>
-    </header>
-    <main class="subject">
-        <h1 class="subject__title subject__title--primary">WordPress</h1>
-        <section class="subject__section subject__section--grey">
-            <h2 class="subject__subtitle">
-                Summary
-            </h2>
-            <h4 class="subject__sub-section">
-                WordPress
-            </h4>
-                <p class="subject__p">
-                    WordPress is a Content Managment System, or CMS, that allows you to build and manage your website with just your browser. <a href="https://www.wp101.com/tutorial/what-is-wordpress/">Read more</a>
-                </p>
-            <h4 class="subject__sub-section">
-                Plugins
-            </h4>
-                <p class="subject__p">
-                    Stay away from plugins when you can because they slow down your website. Most likely 
-                    your theme comes with the functionality you are looking for.
-                </p>
-            <h4 class="subject__sub-section">
-                Speed
-            </h4>
-                <p class="subject__p">
-                    Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over.
-                    If you want to speed up a website after an audit, give an estimated price to your client.
-                </p>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="index.html" aria-label="visit the topics page to something new">Topics</a>
+        </li>
+        <li>
+          <a class="header__link" href="outcomes.html" aria-label="visit the outcomes page to find out why I made this">Outcomes</a>
+        </li>
+        <li>
+          <a class="header__link" href="connect.html" aria-label="visit the connect page to find ways to connect to the online web development community">Connect</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main class="main">
+      <h1 class="title">WordPress</h1>
+      <div class="theme theme--grey">
+        <h2 class="theme__title theme__title--ocean">Summary</h2>
+        <section>
+          <h3 class="section__subtitle">HTML</h3>
+          <p class="section__copy">
+            WordPress is a Content Managment System, or CMS, that allows you to build and manage your website with just your browser. <a href="https://www.wp101.com/tutorial/what-is-wordpress/">Read more</a>
+          </p>
+          <h3 class="section__subtitle">Plugins</h3>
+          <p class="section__copy">
+            Stay away from plugins when you can because they slow down your website. Most likely 
+            your theme comes with the functionality you are looking for.
+          </p>
+          <h3 class="section__subtitle">Speed</h3>
+          <p class="section__copy">
+            Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over.
+            If you want to speed up a website after an audit, give an estimated price to your client.
+          </p>
         </section>
-        <section class="subject__section subject__section--resources">
-            <div class="resources-wrapper">
-                <h2 class="subject__subtitle">
-                    External Resources
-                </h2>
-                <ul class="subject__resources">
-                    <li>
-                        <a href="https://mythemeshop.com/blog/general-wordpress-settings/" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                            Beginner to Advanced WP Settings
-                            <span class="subject__resource-type">
-                                Reading: 10 to 24min
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                            WordPress Child Theme
-                            <span class="subject__resource-type">
-                                Reading: 20min
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://moz.com/blog/a-beginners-guide-to-the-google-search-console" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                            Search Console Guide
-                            <span class="subject__resource-type">
-                                Reading: 20min
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://support.google.com/analytics/answer/1008015?hl=en" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                        Get Started with Analytics
-                            <span class="subject__resource-type">
-                                Reading: 10min
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.wpexplorer.com/easy-tips-wordpress-beginners/" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                            WP Posts/Blog
-                            <span class="subject__resource-type">
-                                Reading: 15min
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://pintsizedsites.com/fixing-wordpress-broken-plugin/" target="_blank" class="subject__resource-link subject__resource-link--primary">
-                            Fix Broken Plugin Update
-                            <span class="subject__resource-type">
-                                Reading: 10min
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div class="theme theme--resources">
+        <h2 class="theme__title theme__title--ocean">External Resources</h2>
+        <section class="section resources">
+          <a class="resources__link resources__link--ocean" href="https://mythemeshop.com/blog/general-wordpress-settings/" target="_blank">Beginner to Advanced WP Settings
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/" target="_blank">WordPress Child Theme
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://moz.com/blog/a-beginners-guide-to-the-google-search-console" target="_blank">Search Console Guide
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://support.google.com/analytics/answer/1008015?hl=en" target="_blank">Get Started with Analytics
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://www.wpexplorer.com/easy-tips-wordpress-beginners/" target="_blank">WP Posts/Blog
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="http://pintsizedsites.com/fixing-wordpress-broken-plugin/" target="_blank">Fix Broken Plugin Update
+            <span class="resources__meta">Read</span>
+          </a>
         </section>
-        <section class="subject__section subject__section--grey">
-            <h2 class="subject__subtitle">
-                CheatSheet
-            </h2>
-            <h4 class="subject__sub-section">
-                Plugins
-            </h4>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        W3 Total Cache
-                    </a>
-                     <p>significantly helps with speed, follow these 
-                         <a href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a>
-                    </p>
-                </div>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        Imagify
-                    </a>
-                    <p>
-                        also helps with speed by compressing images
-                    </p>
-                </div>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        Yoast
-                    </a>
-                    <p>
-                        Helps with your website's SEO settings
-                    </p>
-                </div>
-            <h4 class="subject__sub-section">
-                Themes
-            </h4>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="https://themeforest.net/free/wordpress-themes" target="_blank">
-                        Themeforest
-                    </a>
-                    <p>
-                        a great resource for free and paid themes
-                    </p>
-                </div>
-            <h4 class="subject__sub-section">
-                    Hosting
-            </h4>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="https://getflywheel.com/" target="_blank">
-                        GoDaddy
-                    </a>
-                    <p>
-                        reliable and easy to use. There is also a cool feature they offer for 
-                        <a href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> 
-                        websites
-                    </p>
-                </div>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="https://getflywheel.com/" target="_blank">
-                        Flywheel
-                    </a>
-                    <p>
-                        also great for local development
-                    </p>
-                </div>
-            <h4 class="subject__sub-section">
-                Speed Tests
-            </h4>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        Pingdom
-                    </a>
-                </div>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        Page Speed Insights
-                    </a>
-                </div>
-                <div class="subject__sub-section--plugins">
-                    <a class="subject__link subject__link--primary" href="#" target="_blank">
-                        GT Metrix
-                    </a>
-                </div>
+      </div>
+      <div class="theme theme--grey">
+        <h2 class="theme__title theme__title--ocean">External Resources</h2>
+        <section>
+          <h3 class="section__subtitle">HTML</h3>
+          <dl>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">W3 Total Cache</a></dt>
+              <dd><p>significantly helps with speed, follow these <a href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a></p></dd>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">Imagify</a></dt>
+              <dd><p>Helps with speed by compressing images</p></dd>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">Yoast</a></dt>
+              <dd><p>Helps with your website's SEO settings</p></dd>
+          </dl>
+          <h3 class="section__subtitle">Themes</h3>
+          <dl>
+            <dt><a class="subject__link subject__link--primary" href="https://themeforest.net/free/wordpress-themes" target="_blank">Themeforest</a></dt>
+              <dd><p>a great resource for paid themes</p></dd>
+          <dl>
+          <h3 class="section__subtitle">Themes</h3>
+          <dl>
+            <dt><a class="subject__link subject__link--primary" href="https://getflywheel.com/" target="_blank">GoDaddy</a></dt>
+              <dd><p>reliable and easy to use. There is also a cool feature they offer for <a href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> websites</p></dd>
+            <dt><a class="subject__link subject__link--primary" href="https://getflywheel.com/" target="_blank">Flywheel</a></dt>
+              <dd><p>Great for local development</p></dd>
+          </dl>
+          <h3 class="section__subtitle">Themes</h3>
+          <dl>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">Pingdom</a></dt>
+              <dd><p>Focuses on speed and site health</p></dd>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">Page Speed Insights</a></dt>
+              <dd><p>Focuses on site health</p></dd>
+            <dt><a class="subject__link subject__link--primary" href="#" target="_blank">GT Metrix</a></dt>
+              <dd><p>Focuses on site speed</p></dd>
+          </dl>
         </section>
-        <section class="subject__section">
-            <h2 class="subject__subtitle">
-                Projects to Complete
-            </h2>
-            <h4 class="subject__sub-section subject__sub-section--underline">
-                Create a WordPress Site
-            </h4>
-            <p class="subject__p">
-                Use Flywheel to create a WordPress site about something you care about, whether that's a cause, a cute animal, or a random topic.
-                It can be a one page site, or have multiple pages.
+      </div>
+      <div class="theme">
+        <h2 class="theme__title theme__title--ocean">WordPress Projects</h2>
+        <section class="section"> 
+          <h3 class="section__subtitle section__subtitle--line">Create a WordPress Site</h3>
+            <p class="section__copy">
+              Use Flywheel to create a WordPress site about something you care about, whether that's a cause, a cute animal, or a random topic.
+              It can be a one page site, or have multiple pages.
             </p>
-            <h4 class="subject__sub-section subject__sub-section--underline">
-                Launch your website
-            </h4>
-            <p class="subject__p">
-                Create a repo for your website, and launch it with google pages. Then set it up with Google Console and Analytics.
+            <h3 class="section__subtitle section__subtitle--line">Launch your website</h3>
+            <p class="section__copy">
+              Create a repo for your website, and launch it with google pages. Then set it up with Google Console and Analytics.
             </p>
-            <p>For Help Visit 
-                <a class="subject__link subject__link--primary" href="https://github.community/" target="_blank">
-                    the GitHub Community Forum
-                </a>
+            <p class="section__copy">
+                For Help Visit <a href="https://github.community/" target="_blank" class="section__link section__link--ocean" aria-label="Post a question or see what others asked">the GitHub Community Forum</a>
             </p>
         </section>
+      </div>
     </main>
 </body>
-
 </html>
