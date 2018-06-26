@@ -8,32 +8,19 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li>
-                    <a href="index.html" class="header__link" aria-label="visit the topics page to something new">
-                        Topics
-                    </a>
-                </li>
-                <li>
-                    <a href="outcomes.html" class="header__link" aria-label="visit the outcomes page to find out why I made this">
-                        Outcomes
-                    </a>
-                </li>
-                <li>
-                    <a href="connect.html" class="header__link" aria-label="visit the connect page to find ways to connect to the online web development community">
-                        Connect
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Topics</a></li>
+        <li class="nav__item"><a class="nav__link" href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
     <main class="main main--home">
-        <section>
+        <section class="section section--home">
             <h1 class="title">Learn Web Development</h1>
             <ul class="list list--home">
-                <li class="list__item list__item">Quick explanations</li>
+                <li class="list__item">Quick explanations</li>
                 <li class="list__item">Cheat Sheets</li>
                 <li class="list__item">External Resources</li>
                 <li class="list__item">Projects</li>
@@ -41,12 +28,11 @@
             <p class="section__copy section__copy--home">
                 Made for those with a fast pace life, looking for a job in web development. Complete approachable projects to gain the skills
                 needed to be a web developer. Each section contains a brief summary of the subtopics, a list of external
-                resources I have used and found the most helpful, with reading time descriptions, a small cheat sheet, and
-                project prompts.
+                resources I have used and found the most helpful, a small cheat sheet, and project prompts.
             </p>
         </section>
         <div class="section-wrapper">
-        <section class="topic topic--prime">
+        <section class="topic">
             <a class="page-link" href="git.html" aria-label="Visit the git page to learn about git">
                 <h2 class="topic__title">Git & GitHub</h2>
                 <ul class="topic__list">
@@ -56,7 +42,7 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--second">
+        <section class="topic">
             <a class="page-link" href="dotfiles.html" aria-label="Visit the dotfiles page to learn about dotfiles">
                 <h2 class="topic__title">Dotfiles</h2>
                 <ul class="topic__list">
@@ -66,7 +52,7 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--third">
+        <section class="topic">
             <a  class="page-link" href="design.html" aria-label="Visit the design page to learn about markup and CSS">
                 <h2 class="topic__title">HTML & CSS</h2>
                 <ul class="topic__list">
@@ -76,8 +62,8 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--fourth">
-            <a class="page-link" href="coming-soon.html" aria-label="Visit the javascript page to learn about JS">
+        <section class="topic">
+            <a class="page-link" href="js.html" aria-label="Visit the javascript page to learn about JS">
                 <h2 class="topic__title">JavaScript</h2>
                 <ul class="topic__list">
                     <li class="topic__list--item">Functional</li>
@@ -86,17 +72,7 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--second">
-            <a class="page-link" href="comming-soon.html" aria-label="Visit the TDD page to learn about Test Driven Development">
-                <h2 class="topic__title">Testing</h2>
-                <ul class="topic__list">
-                    <li class="topic__list--item">Browser Testing</li>
-                    <li class="topic__list--item">Testing Libraries</li>
-                    <li class="topic__list--item">Tools</li>
-                </ul>
-            </a>
-        </section>
-        <section class="topic topic--third">
+        <section class="topic">
             <a class="page-link" href="a11y.html" aria-label="Visit the a11y page to learn about accessibility">
                 <h2 class="topic__title">Accessibility</h2>
                 <ul class="topic__list">
@@ -106,8 +82,8 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--fourth">
-            <a class="page-link" href="cms.html" aria-label="Visit the WP page to learn about WordPress">
+        <section class="topic">
+            <a class="page-link" href="wordpress.html" aria-label="Visit the WP page to learn about WordPress">
                 <h2 class="topic__title">WordPress</h2>
                 <ul class="topic__list">
                     <li class="topic__list--item">Plugins</li>
@@ -116,17 +92,15 @@
                 </ul>
             </a>
         </section>
-        <section class="topic topic--prime">
-            <a class="page-link" href="coming-soon.html" aria-label="Visit the job page to learn about finding a job in the web development industry">
-                <h2 class="topic__title">Job Search</h2>
-                <ul class="topic__list">
-                    <li class="topic__list--item">Resumes</li>
-                    <li class="topic__list--item">Job Postings</li>
-                    <li class="topic__list--item">Cover Letters</li>
-                </ul>
-            </a>
-        </section>
       </div>
     </main>
+      <div class="pre-footer">
+        <div class="pre-footer__left">
+          <h2 class="pre-footer__title">Connect With The Community</h2>
+        </div>
+        <div class="pre-footer__right">
+          <a class="pre-footer__link" href="connect.html">Learn More</a>
+        </div>
+      </div>
 </body>
 </html>

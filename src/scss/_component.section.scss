@@ -1,72 +1,45 @@
 .section {
+  &--home {
+    padding: 2rem 1rem 0;
+    box-sizing: border-box;
+
+    .title {
+      text-align: left;
+    }
+  }
 
   &__subtitle {
-    letter-spacing: 0.02rem;
+    margin: 1.5rem 0 1rem;
     font-size: 1.75rem;
     line-height: 1.5;
-    margin: 1.5rem 0 1rem;
 
-    @media (min-width: 50rem) {
-      font-size: 1.7rem;
+    @media (min-width: $first-bp) {
       margin: 1rem 0;
     }
   }
 
   &__copy {
-    line-height: 2;
     font-size: 1rem;
+    line-height: 2;
 
     &--home {
-      font-size: 1.125rem;
-      line-height: 2;
-      text-align: center;
+      line-height: 1.75;
     }
 
-    @media (min-width: 50rem) {
+    @media (min-width: $first-bp) {
       font-size: 1.125rem;
     }
   }
 
   &__link {
+    text-decoration: underline;
 
     &:hover {
-      color: $c-dark;
-    }
-    &--primary {
-      color: $c-purple;
+      color: $c-grey;
     }
   }
-}
 
-.subject__resource-link--primary {
-    color: $c-purple;
-    border: 2px solid $c-purple;
-    &:hover {
-        border: 2px solid $c-purple;
-        color: $c-light;
-        background-color: $c-purple;
-    }
-}
-
-.subject__sub-section--underline {
-    border-left: 4px solid $c-dark;
-}
-
-
-.title {
-  font-size: 2rem;
-  margin: 3rem auto;
-  text-align: center;
-
-  @media (min-width: 50rem) {
-    margin-top: 2rem;
-    font-size: 2.5rem;
+  &__def-list {
+    margin-left: 2rem;
   }
-}
-
-.main--home {
-  max-width: 75rem;
-  margin: auto;
-  height: 100%;
-  padding: 4rem;
 }

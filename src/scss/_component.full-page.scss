@@ -1,12 +1,10 @@
-/*  CONNECT PAGE 
-============================ */
-
-.main--full-pg {
+ 
+.full-page {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  height: 60vh;
+  width: 100%;
 }
 
 .coming-soon {
@@ -15,41 +13,63 @@
   font-size: 4rem;
   line-height: 2;
   text-align: center;
-  color: #fff;
+  color: $c-white;
   position: relative;
+
+  &::after { 
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+    background-color: $c-purple;
+    box-shadow: 0px 16px 14px -10px rgba(0, 0, 0, 0.2);
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+
+    &::after {
+      background-color: $c-purple;
+    }    
+  }
 }
 
-.coming-soon::after { 
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  z-index: -1;
-  background-color: #7d9bdc;
-  box-shadow: 0px 16px 14px -10px rgba(0, 0, 0, 0.2);
-}
 
-.coming-soon__link {
-  font-size: 1.5rem;
-  width: 100%;
-  text-align: center;
-}
-.coming-soon__link::after {
-  background-color: #7d9bdc;
-}
+.connect {
+  &__wrapper {
+    background-color: $c-light-grey;
+    margin: 5rem;
+    border-radius: 1rem;
+    padding-left: 4rem;
+    height: 80vh;
+    width: 80vw;
+    margin-top: 3rem;
+  }
 
-/*  CONNECT PAGE 
-============================ */
+  &__title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    letter-spacing: 0.1rem;
+    color: $c-grey;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-.connect-wrapper {
-  background-color: #7e8fb5;
-  color: #fff;
-}
+  &__subtitle {
+    color: $c-black;
+  }
 
-.connect__title {
-  color: #fff;
+  &__link {
+    color: $c-black;
+    line-height: 200%;
+    text-decoration: underline;
+  }
 }

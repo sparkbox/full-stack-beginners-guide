@@ -2,49 +2,47 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, ul li {
-    color: $c-grey;
-}
-
-::selection {
-    background: $c-grey;
-    color: $c-white;
-}
-
-.main {
-  margin: 0.5rem;
-  max-width: 100rem;
-
-  @media (min-width: 50rem) { 
-    margin: 1rem;
-  }
+  color: $c-grey;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-// keyframes
-@keyframes scaleIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8, 0.8);
+::selection {
+  background: $c-grey;
+  color: $c-white;
+}
+
+.main {
+  margin: 0.5rem;
+  max-width: 100rem;
+
+  @media (min-width: $first-bp) { 
+    margin: 1rem;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
+
+  &--home {
+    margin: auto;
+    height: 100%;
+    max-width: 70rem;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(10%);
-  }
-  100% {
-    opacity: 1;
-    transform: translatey(0%);
+.section-wrapper {
+  margin: 3rem auto 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+
+  @media (min-width: $first-bp) {
+    margin: 2rem auto;
+    font-size: 2.5rem;
   }
 }

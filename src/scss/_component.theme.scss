@@ -3,14 +3,14 @@
   margin: 0;
   border-radius: 1.5rem;
 
-  @media (min-width: 50rem) {
+  @media (min-width: $first-bp) {
     padding: 4rem 6rem;
     margin: 2rem;
     border-radius: 1rem;
   }
 
   &--grey {
-    background-color: lighten($c-dark, 70%);
+    background-color: lighten($c-grey, 70%);
   }
     
   &__title {
@@ -19,26 +19,10 @@
     font-size: 1.25rem;
     font-weight: normal;
 
-    @media (min-width: 50rem) {
+    @media (min-width: $first-bp) {
       text-align: center;
       font-size: 1.875rem;
       margin: 0 0 3rem 0;
-    }
-
-    &--lava {
-      color: $c-red;
-    }
-
-    &--sunflower {
-      color: $c-yellow;
-    }
-
-    &--rose {
-      color: $c-pink;
-    }
-
-    &--ocean {
-      color: $c-teal;
     }
   }
 }

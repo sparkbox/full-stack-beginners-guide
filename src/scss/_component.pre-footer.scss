@@ -1,0 +1,53 @@
+.pre-footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  padding: 4rem;
+  margin-top: 4rem;
+  background-color: $c-black;
+  color: $c-white;
+
+  &__left,
+  &__right {
+    float: left;
+    text-align: center;
+  }
+
+  &__left {
+    width: 100%;
+
+    @media (min-width: $first-bp) {
+      width: 60%;
+    }
+  }
+
+  &__right {
+    width: 90%;
+
+    @media (min-width: $first-bp) {
+      width: 40%;
+    }
+  }
+
+  &__title {
+    color: $c-light-grey;
+  }
+
+  &__link {
+    display: block;
+    width: inherit;
+    // margin-left: 4rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    color: $c-black;
+    background-color: $c-light-grey;
+    transition: all 200ms ease-in, background-image 100ms ease;
+
+    &:hover {
+      background-color: $c-purple;
+      color: $c-white;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Topics</a></li>
+        <li class="nav__item"><a class="nav__link" href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="main">
+      <h1 class="title">JavaScript</h1>
+      <div class="theme theme--grey">
+        <h2 class="theme__title theme__title--ocean">Summary</h2>
+        <section>
+          <h3 class="section__subtitle">Intro</h3>
+          <p class="section__copy">
+            JavaScript is a scripting language on the client side of web pages that allows developers to create dynamically generate content through object oriented or functional programming patterns.
+          </p>
+          <h3 class="section__subtitle">Run JS</h3>
+          <p class="section__copy">
+            Reference an external script file by adding a script tag at the end of your html document. Then javascript will run from top to bottom of your file. Use ES6 imports to separate different aspects of your program in different files. This will make it easier to catch bugs and stay organized. Most articles online do not use ES6, yet that is the standard now.
+          </p>
+        </section>
+      </div>
+      <div class="theme theme--resources">
+        <h2 class="theme__title theme__title--ocean">External Resources</h2>
+        <section class="section resources">
+          <a class="resources__link resources__link--ocean" href="http://eloquentjavascript.net/" target="_blank">Eloquent JS
+            <span class="resources__meta">Free Book</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="http://eloquentjavascript.net/code/" target="_blank">Eloquent JS Sandbox
+            <span class="resources__meta">Exercises</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank">Express/Node Intro
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://medium.com/front-end-hacking/wth-is-prototypal-inheritance-b0c7f4f3211e" target="_blank">Prototypical Inheritance
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://code.tutsplus.com/tutorials/the-essentials-of-writing-high-quality-javascript--net-15145" target="_blank">High Quality JS
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://babeljs.io/repl/" target="_blank">Babel
+            <span class="resources__meta">Sandbox</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://seesparkbox.com/foundry/javascript_design_patterns" target="_blank">JS Design Patterns
+            <span class="resources__meta">Read</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://github.com/garora/TDD-Katas/blob/master/KatasReadme.md#the-fizzbuzz-kata" target="_blank">FizzBuzz Kata
+            <span class="resources__meta">Exercise</span>
+          </a>
+          <a class="resources__link resources__link--ocean" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JS MDN
+            <span class="resources__meta">Guide</span>
+          </a>
+        </section>
+      </div>
+      <div class="theme theme--grey">
+        <h2 class="theme__title theme__title--ocean">Cheatsheet</h2>
+          <section class="section">
+          <h3 class="section__subtitle">Manipulate Arrays</h3>
+          <div class="code__wrapper">
+            <code class="code code__block">for(let i = 0; i < array.length; i++) {
+                // do something with the array data
+              }</code>
+          </div>
+          <div class="code__wrapper">
+            <code class="code code__block">const domElements = document.querySelectorAll('button');
+              domElements.forEach((el) => {
+                  el.addEventListener('click', exFunction)
+              });
+            </code>
+          </div>
+          <div class="code__wrapper">
+            <code class="code code__block"> // make a new from inputs of their values
+                const inputs = document.querySelectorAll('inputs');
+                let arr = Array.from(inputs).map(inputs => inputs.value);
+            </code>
+          </div>
+          </section>
+          <h2 class="theme__title theme__title--ocean">Debugging</h2>
+          <div class="code__wrapper">
+              <code class="code code__block">// add a console.logs
+                const doesThing = () => {
+                  console.log('doesThing ran');
+                  // for loop
+                  console.log('for loop ran');
+                }
+              </code>
+            </div>
+        </section>
+      </section>
+      <h2 class="theme__title theme__title--ocean">Export</h2>
+      <div class="code__wrapper">
+          <code class="code code__block">module.exports = functionName;
+          </code>
+        </div>
+    </section>
+      </div>
+      <div class="theme">
+        <h2 class="theme__title theme__title--ocean">JavaScript Projects</h2>
+        <section class="section"> 
+          <h3 class="section__subtitle section__subtitle--line">Start A Project</h3>
+            <p class="section__copy">
+              <a href="https://medium.freecodecamp.org/how-to-escape-tutorial-purgatory-as-a-new-developer-or-at-any-time-in-your-career-e3a4b2384a40" target="_blank">
+                Escape tutorial purgatory
+              </a> by using a project to learn JS. Pick something you are interested in, whether accessibility, gaming, storytelling, data. Take a problem you would like solved related to your interest and use Javascript to solve it.
+              Start off with a discovery session by doing some research and brainstorming before you write any code. Then get your first draft of a program up and running. Start refactoring your code in small sections after you have it working. Make sure to keep everything in a GitHub repo.
+            </p>
+            <h3 class="section__subtitle section__subtitle--line">Complete Katas</h3>
+            <p class="section__copy">
+              Complete at least two katas. First get them working just with node. Then bring them to the browser, and give them some styling. Create a GitHub repo before you start, and push all of your changes as you go to the repo.
+            </p>
+            <p class="section__copy">
+                For Help Visit <a href="https://github.community/" target="_blank" class="section__link section__link--ocean" aria-label="Post a question or see what others asked">the GitHub Community Forum</a>
+            </p>
+        </section>
+      </div>
+    </main>
+</body>
+</html>

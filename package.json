@@ -4,7 +4,6 @@
   "description": "__pages__",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass src/scss/ -o dist/css/ --output-style compressed"
   },
   "repository": {
@@ -21,6 +20,6 @@
     "pa11y": "^5.0.4"
   },
   "dependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^3.8.0"
   }
 }

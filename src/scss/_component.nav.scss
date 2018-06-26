@@ -1,0 +1,61 @@
+.nav {
+  &__list {
+    width: 100%;
+    float: right;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    list-style: none;
+
+    @media (min-width: $first-bp) {
+      max-width: 20rem;
+    }
+  }
+
+  &__item {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+    @media (min-width: $first-bp) {
+      width: auto;
+      padding: 0 1rem;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 0 0.5rem;
+    font-size: $font-xxs;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    color: $c-white;
+
+    &:hover {
+      color: $c-white;
+    }
+
+    @media (min-width: $first-bp) {
+      color: $c-grey;
+    }
+    
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      bottom: -25%;
+      z-index: -1;
+      height: 0.25rem;
+      width: 100%;
+      background-color: $c-grey;
+      transition: all 200ms linear;
+    }
+
+    &:hover::after {
+      height: 150%;
+     background-color: $c-purple;
+    }
+  }
+}
