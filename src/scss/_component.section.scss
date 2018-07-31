@@ -32,10 +32,34 @@
   }
 
   &__link {
-    text-decoration: underline;
+    position: relative;
+    color: $c-blue-yonder;
+    text-decoration: none;
+    transition: color 150ms linear 50ms;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      margin: 0;
+	    left: 0;
+	    bottom: -0.125rem;
+	    height: 0.2em;
+      width: 100%;
+      z-index: -1;
+      background-color: $c-blue-yonder;
+      transition: all 150ms linear 100ms, padding 150ms linear,  transform 150ms linear;
+    }
 
     &:hover {
-      color: $c-grey;
+      color: #fff;
+    }
+
+    &:hover::after {
+      transform: translate(-0.25rem, 0.125rem);
+      height: 100%;
+      width: 100%;
+      padding: 0.25rem;
     }
   }
 

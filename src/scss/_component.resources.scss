@@ -25,8 +25,8 @@
     font-weight: 700;
     font-size: 1rem;
     width: 50vw;
-    color: $c-purple;
-    border: 2px solid $c-purple;
+    color: $c-blue-yonder;
+    border: 2px solid $c-blue-yonder;
     border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
@@ -46,15 +46,19 @@
     }
   
     &:hover {
-      border: 2px solid $c-purple;
+      border: 2px solid $c-blue-yonder;
       color: $c-white;
-      background-color: $c-purple;
+      background-color: $c-blue-yonder;
       box-shadow: 0px 14px 6px -8px rgba(126, 126, 230, 0);
     }
   }
 
   &__meta {
     font-size: 0.9rem;
-    color: $c-grey;
+    color: $c-old-silver;
+
+    .resources__link:hover & {
+      color: $c-cambridge-blue;
+    }
   }
 }
