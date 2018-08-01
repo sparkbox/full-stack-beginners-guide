@@ -20,7 +20,7 @@ a {
   max-width: 100rem;
 
   @media (min-width: $first-bp) { 
-    margin: 1rem;
+    margin: 1rem auto;
   }
 
   &--home {
