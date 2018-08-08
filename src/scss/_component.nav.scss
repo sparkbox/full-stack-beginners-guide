@@ -27,9 +27,10 @@
     padding: 0 0.5rem;
     font-size: $font-xxs;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: normal;
     text-align: center;
     color: $c-white;
+    transition: all 200ms ease-in 50ms;
 
     &:hover {
       color: $c-white;
@@ -50,12 +51,12 @@
       height: 0.25rem;
       width: 100%;
       background-color: $c-grey;
-      transition: all 200ms linear;
+      transition: all 200ms ease-in;
     }
 
     &:hover::after {
       height: 150%;
-     background-color: $c-blue-yonder;
+      background: linear-gradient(90deg,  $c-blue-yonder 0%, rgba(88,143,182,1)  100%);
     }
   }
 }

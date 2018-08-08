@@ -68,13 +68,14 @@
   }
 
   &__link {
-    color: $c-blue-yonder;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 2;
+    position: relative;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    position: relative;
+    font-weight: normal;
+    text-align: center;
+    color: $c-blue-yonder;
+    font-size: 1.25rem;
+    line-height: 2;
     transition: all 200ms ease-in 50ms;
 
     &::before {
@@ -83,9 +84,10 @@
       display: block;
       bottom: 0rem;
       height: 0.25rem;
-      width: 90%;
+      margin: 0;
+      left: 0;
+      width: 100%;
       z-index: -1;
-      transform: translateX(0.5rem);
       box-shadow: 0px 6px 8px 0px rgba($c-blue-yonder, 0.5);
       background: $c-blue-yonder;
       background: linear-gradient(90deg, $c-blue-yonder 0%, $c-blue-yonder 100%);
@@ -97,7 +99,6 @@
     }
 
     &:hover::before {
-      border-radius: 2rem;
       height: 100%;
       background: linear-gradient(90deg,  $c-blue-yonder 0%, rgba(88,143,182,1)  100%);
     }
@@ -115,5 +116,6 @@
     margin: auto 2rem 1rem auto;
     list-style: none;
     float: left;
+    text-align: center;
   }
 }
