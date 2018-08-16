@@ -16,6 +16,19 @@
   </header>
     <main class="main">
       <h1 class="title">HTML & CSS</h1>
+      <div class="sub-menu">
+        <ul class="sub-menu__list">
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#resources">Resources</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
       <div class="theme theme--grey">
         <h2 class="theme__title">Summary</h2>
         <section>
@@ -41,7 +54,7 @@
           </p>
       </section>
         </div>
-        <div class="theme theme--resources">
+        <div class="theme theme--resources" id="resources">
           <h2 class="theme__title">Resources I've Found Helpful</h2>
           <section class="section resources">
             <a class="resources__link" href="https://caniuse.com/" target="_blank">Can I Use
@@ -79,7 +92,7 @@
             </a>
           </section>
         </div>
-        <div class="theme theme--grey">
+        <div class="theme theme--grey" id="cheatsheet">
           <h2 class="theme__title">Cheat Sheet</h2>
           <section class="section">
             <h3 class="section__subtitle">Pseudo Element</h3>
@@ -108,7 +121,7 @@
             </div>
           </section>
         </div>
-        <div class="theme">
+        <div class="theme" id="projects">
           <h2 class="theme__title">HTML & CSS Projects</h2>
           <section class="section"> 
             <h3 class="section__subtitle section__subtitle--line">Create A Webpage in CodePen</h3>
@@ -122,9 +135,6 @@
               Search for a fun website element on drizzle or behance. Once you have found something that 
               looks interesting, create a CodePen and recreate that design with code. Make sure to attribute
               the designer.
-            </p>
-            <p class="section__copy">For Help Visit 
-              <a class="section__link" shref="https://github.community/" target="_blank" aria-label="Post a question or see what others asked">the GitHub Community Forum</a>
             </p>
         </section>
       </div>

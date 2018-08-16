@@ -1,57 +1,47 @@
-.nav {
-  &__list {
-    width: 100%;
-    float: right;
-    margin: 0 auto;
-    padding: 1.5rem 0;
-    list-style: none;
+.sub-menu {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto 4rem; 
 
-    @media (min-width: $first-bp) {
-      max-width: 20rem;
-    }
+  &__list {
+    list-style: none;
+    margin: auto;
   }
 
   &__item {
     float: left;
-    width: 50%;
-    text-align: center;
-
-    @media (min-width: $first-bp) {
-      width: auto;
-      padding: 0 1rem;
-    }
+    margin: 0 1.5rem;
   }
 
   &__link {
     position: relative;
-    padding: 0.5rem 0.125rem;
-    font-size: $font-xxs;
+    padding: 0.5rem 0;
     text-decoration: none;
     font-weight: normal;
     text-align: center;
-    color: $c-white;
+    color: $c-blue-yonder;
+    font-size: 1.25rem;
+    line-height: 2;
     transition: all 200ms ease-in 50ms;
 
-    @media (min-width: $first-bp) {
-      color: $c-blue-yonder;
-    }
-    
     &:hover {
       color: $c-white;
     }
 
     &::after {
       content: '';
-      display: block;
       position: absolute;
-      margin: 0;
-      left: 0;
-      bottom: 0;
+      display: block;
+      bottom: 0rem;
       height: 0.2rem;
-      z-index: -1;
+      left: 0;
       width: 100%;
-      background: linear-gradient(90deg, $c-blue-yonder 0%, $c-blue-yonder 100%);
+      margin: 0 auto;
+      z-index: -1;
+      transform: scale(0, 1);
       box-shadow: 0px 6px 8px 0px rgba($c-blue-yonder, 0.25);
+      background: linear-gradient(90deg, $c-blue-yonder 0%, $c-blue-yonder 100%);
       transition: all 200ms ease-in;
     }
 

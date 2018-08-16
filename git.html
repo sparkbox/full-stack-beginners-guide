@@ -16,6 +16,19 @@
   </header>
     <main class="main">
       <h1 class="title">Git & GitHub</h1>
+      <div class="sub-menu">
+          <ul class="sub-menu__list">
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#resources">Resources</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
       <div class="theme theme--grey">
         <h2 class="theme__title">Summary</h2>
         <section>
@@ -34,7 +47,7 @@
           GitHub is <strong>a development platform that uses git</strong>, where code for projects can
           be stored. Then other developers can others can easily view and access the code files. Other 
           similar services include GitLab and BitBucket. I personally prefer GitHub because that's the
-          platform I used to learn git. You can <a href="https://github.com/join" target="_blank" class="section__link">
+          platform I used to learn git. You can <a class="section__link" aria-label="Sign up for a GitHub account" href="https://github.com/join" target="_blank">
           sign up</a> for a free account if you don't already have one. 
           </p>
         </section>
@@ -69,8 +82,7 @@
           </ul>
           </section>
         </div>
-        <!-- resources section -->
-        <div class="theme theme--resources">
+        <div class="theme theme--resources" id="resources">
           <h2 class="theme__title">Resources I've Found Helpful</h2>
           <section class="section resources">  
             <a class="resources__link" href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching
@@ -108,8 +120,7 @@
             </a>
             </section>
           </div>
-          <!-- cheat sheet section -->
-          <div class="theme theme--grey">
+          <div class="theme theme--grey" id="cheatsheet">
             <h2 class="theme__title">Cheat Sheet</h2>
             <section class="section">
               <h3 class="section__subtitle">How to set up a GitHub Repo</h3>
@@ -134,8 +145,7 @@
               </div>
             </section>
           </div>
-          <!-- project prompts section -->
-        <div class="theme">
+        <div class="theme" id="projects">
           <h2 class="theme__title">Git & GitHub Projects</h2>
           <section class="section">  
             <h3 class="section__subtitle section__subtitle--line">Contribute to this website</h3>
@@ -154,11 +164,11 @@
             </p>   
             <ul class="list">
               <li class="list__item">
-                <a href="https://github.com/yourfirstpr/yourfirstpr.github.io" target="_blank" class="section__link" aria-label="GitHub repo that you can make your first PR to">Your First PR:</a>
+                <a href="https://github.com/yourfirstpr/yourfirstpr.github.io" target="_blank" class="section__link">Your First PR:</a>
                 Great to practice a PR, uses Jekyll
               </li>
               <li class="list__item">
-                <a href="https://up-for-grabs.net/" target="_blank" class="section__link" aria-label="List of curation projects that beginners can PR to">Up For Grabs:</a>
+                <a href="https://up-for-grabs.net/" target="_blank" class="section__link">Up For Grabs:</a>
                 Curated list of projects for new contributors
               </li>
             </ul>

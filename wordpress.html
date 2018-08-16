@@ -16,6 +16,19 @@
   </header>
   <main class="main">
     <h1 class="title">WordPress</h1>
+    <div class="sub-menu">
+      <ul class="sub-menu__list">
+        <li class="sub-menu__item">
+          <a class="sub-menu__link" href="#resources">Resources</a>
+        </li>
+        <li class="sub-menu__item">
+          <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
+        </li>
+        <li class="sub-menu__item">
+          <a class="sub-menu__link" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
     <div class="theme theme--grey">
       <h2 class="theme__title">Summary</h2>
       <section>
@@ -37,7 +50,7 @@
         </p>
       </section>
     </div>
-    <div class="theme theme--resources">
+    <div class="theme theme--resources" id="resources">
       <h2 class="theme__title">Resources I've Found Helpful</h2>
       <section class="section resources">
         <a class="resources__link" href="https://www.wp101.com/tutorial/what-is-wordpress/" target="_blank">What is WordPress
@@ -63,13 +76,13 @@
         </a>
       </section>
     </div>
-    <div class="theme theme--grey">
+    <div class="theme theme--grey" id="cheatsheet">
       <h2 class="theme__title">Cheat Sheet</h2>
       <section>
         <h3 class="section__subtitle">Plugins</h3>
         <dl class="section__def-list">
           <dt><a class="section__link" href="https://wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a></dt>
-            <dd><p>significantly helps with speed, follow these <a href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a></p></dd>
+            <dd><p>significantly helps with speed, follow these <a class="section__link" href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a></p></dd>
           <dt><a class="section__link" href="https://wordpress.org/plugins/imagify/" target="_blank">Imagify</a></dt>
             <dd><p>Helps with speed by compressing images</p></dd>
           <dt><a class="section__link" href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">Yoast</a></dt>
@@ -85,7 +98,7 @@
           <dt><a class="section__link" href="https://getflywheel.com/" target="_blank">Flywheel</a></dt>
             <dd><p>Great for local development</p></dd>
           <dt><a class="section__link" href="https://www.godaddy.com/" target="_blank">GoDaddy</a></dt>
-            <dd><p>Reliable and easy to use. There is also a cool feature they offer for <a href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> websites</p></dd>
+            <dd><p>Reliable and easy to use. There is also a cool feature they offer for <a class="section__link" href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> websites</p></dd>
           <dt><a class="section__link" href="https://www.bluehost.com/" target="_blank">Bluehost</a></dt>
             <dd><p>Good pricing and easy to use</p></dd>
         </dl>
@@ -100,7 +113,7 @@
         </dl>
       </section>
     </div>
-    <div class="theme">
+    <div class="theme" id="projects">
       <h2 class="theme__title">WordPress Project</h2>
       <section class="section"> 
         <h3 class="section__subtitle section__subtitle--line">Create a WordPress Site</h3>
