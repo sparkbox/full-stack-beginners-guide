@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npm run sass && npm run server",
     "server": "node tasks/server.js --color",
-    "sass": "node-sass src/scss/ -o dist/css/ --output-style compressed --color"
+    "sass": "node-sass src/scss/ -o src/css/ --output-style compressed --color"
   },
   "repository": {
     "type": "git",
