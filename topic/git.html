@@ -1,187 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Learn Git</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beginner's Guide</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="../src/css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <nav>
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="../index">Topics</a></li>
-        <li class="nav__item"><a class="nav__link" href="../connect">Connect</a></li>
-      </ul>
-    </nav>
-  </header>
-    <main class="main">
-      <h1 class="title">Git & GitHub</h1>
-      <div class="sub-menu">
-          <ul class="sub-menu__list">
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#resources">Resources</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
-            </li>
-            <li class="sub-menu__item">
-              <a class="sub-menu__link" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      <div class="theme theme--grey">
-        <h2 class="theme__title">Summary</h2>
-        <section>
-          <h3 class="section__subtitle">Git</h3>
-          <p class="section__copy">
-          Git is a <strong>version control system used on the terminal, or command line,</strong> so 
-          developers can keep track of their the code changes on any given project. It also allows 
-          for <strong>collaboration</strong>. Instead of having to send code back and forth, like 
-          through email or FTP, developers can pull the latest version of a project and keep track of 
-          the revisions they make to the code.
-          </p>
-        </section>
-        <section>
-          <h3 class="section__subtitle">GitHub</h3>
-          <p class="section__copy">
-          GitHub is <strong>a development platform that uses git</strong>, where code for projects can
-          be stored. Then other developers can others can easily view and access the code files. Other 
-          similar services include GitLab and BitBucket. I personally prefer GitHub because that's the
-          platform I used to learn git. You can <a class="section__link" aria-label="Sign up for a GitHub account" href="https://github.com/join" target="_blank">
-          sign up</a> for a free account if you don't already have one. 
-          </p>
-        </section>
-        <section>
-          <h3 class="section__subtitle">Documentation & Messages</h3>
-          <p class="section__copy">
-          When working with git and any service like GitHub be aware of <strong>ReadMe, Pull Requests, 
-          and Commit Messages.</strong>
-          </p>
-          <ul class="list">
-            <li class="list__item">
-            <strong>Readme</strong>, often seen as ReadME.md, uses markdown syntax and contains 
-            documentation about the repo it is a part of. This helps other users understand your 
-            repo and your goals regarding it.
-            </li>
-            <li class="list__item">
-            <strong>Pull Requests</strong> are used with teams and open source communities. On GitHub
-            you can find the Pull Request tab right under the the repo's name. Pull Requests are used
-            to compare changes or additions to code in the repo. To open a pull request for an open 
-            source project, fork the repo, use <code class="code">git clone</code> to clone that forked
-            version, make a branch off of master with <code class="code">git checkout branch 
-            [branch-name]</code>. After making changes and pushing those up to your forked repo, go to 
-            the original repo, and use the Pull Request button to submit your changed code.
-            </li>
-            <li class="list__item">
-            <strong>Commit Messages</strong> are messages you write in the terminal once you have added files
-            to your remote repo with <code class="code">git add [file-name]</code>. Then use the command 
-            <code class="code">git commit -m "put text in single or double quotes"</code> This message will
-            show up in your repo so you know when you made what changes. To make a multi-line message, 
-            simple press enter before closing the quotes.
-            </li>
-          </ul>
-          </section>
-        </div>
-        <div class="theme theme--resources" id="resources">
-          <h2 class="theme__title">Resources I've Found Helpful</h2>
-          <section class="section resources">  
-            <a class="resources__link" href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching
-              <span class="resources__meta">Exercise</span>
-            </a>
-            <a class="resources__link" href="https://try.github.io/levels/1/challenges/1" target="_blank">Try Git
-              <span class="resources__meta">Exercise</span>
-            </a>
-            <a class="resources__link" href="https://github.com/jehna/Articleme-best-practices" target="_blank">Best ArticleMe Practices
-              <span class="resources__meta">Article</span>
-            </a>
-            <a class="resources__link" href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf" target="_blank">Git
-              <span class="resources__meta">Cheat sheet</span>
-            </a>
-            <a class="resources__link" href="https://guides.github.com/introduction/flow/" target="_blank">GitHub Flow
-              <span class="resources__meta">Interactive</span>
-            </a>
-            <a class="resources__link" href="http://commonmark.org/help/tutorial/" target="_blank">Markdown Reference
-              <span class="resources__meta">Exercise</span>
-            </a>
-            <a class="resources__link" href="https://help.github.com/articles/creating-a-pull-request-from-a-fork/" target="_blank">Pull Request From A Fork
-              <span class="resources__meta">Article</span>
-            </a>
-            <a class="resources__link" href="http://ohshitgit.com/" target="_blank">Fix A Git Mistake
-              <span class="resources__meta">Article</span>
-            </a>
-            <a class="resources__link" href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages" target="_blank">Writing Commit Messages
-              <span class="resources__meta">Article</span>
-            </a>
-            <a class="resources__link" href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html" target="_blank">Squash with Rebase
-              <span class="resources__meta">Article</span>
-            </a>
-            <a class="resources__link" href="https://gist.github.com/corinneling/c027da69442ea08c5e67e71f72afe3c8" target="_blank">Sync A Forked Repo
-              <span class="resources__meta">Gist of Mine</span>
-            </a>
-            </section>
-          </div>
-          <div class="theme theme--grey" id="cheatsheet">
-            <h2 class="theme__title">Cheat Sheet</h2>
-            <section class="section">
-              <h3 class="section__subtitle">How to set up a GitHub Repo</h3>
-              <div class="code__wrapper">
-                <code class="code code__block">touch ReadME.md 
-                  git init 
-                  git add ReadME.md 
-                  git commit -m "first commit" 
-                  git remote add origin [github_repo_url]
-                  git push -u origin master</code>
-              </div>
-              <h3 class="section__subtitle">Add Changed Files</h3>
-              <div class="code__wrapper">
-                <code class="code code__block">git status 
-                  git add [name_of_file]</code>
-              </div>
-              <h3 class="section__subtitle">Local, Remote, and Origin</h3>
-              <div class="code__wrapper">
-                <code class="code code__block">// local environment refers to your personal computer
-                  // remote refers to an in between state. It's where all of your files are stored when they committed but not yet pushed
-                  // origin refers to GitHub's environment</code>
-              </div>
-            </section>
-          </div>
-        <div class="theme" id="projects">
-          <h2 class="theme__title">Git & GitHub Projects</h2>
-          <section class="section">  
-            <h3 class="section__subtitle section__subtitle--line">Contribute to this website</h3>
-            <p class="section__copy">
-            You will need a basic understanding of html and css. Go to <a class="section__link" href="https://github.com/corinneling/beginners-guide" target="_blank">
-            this repository</a>, or repo, on GitHub. Fork the repo, clone it, and add something you've 
-            learned about web development ot the bottom of the ReadME.md. And, if there are any issues
-            in the Issue tab, comment that you will be working on it. and start tackling the issue.
-            </p>
-            <h3 class="section__subtitle section__subtitle--line">Create your own repo or contribute to Open Source</h3>
-            <p class="section__copy">
-              Create a repo for a project you are interested in starting, such as a personal website. 
-              Create a ReadME for the repo with some documentation, and try and make small, well documented
-              commits. If you would rather contribute to an existing repo, check out the following links to find
-              an Open Source project you are interested in:
-            </p>   
-            <ul class="list">
-              <li class="list__item">
-                <a href="https://github.com/yourfirstpr/yourfirstpr.github.io" target="_blank" class="section__link">Your First PR:</a>
-                Great to practice a PR, uses Jekyll
-              </li>
-              <li class="list__item">
-                <a href="https://up-for-grabs.net/" target="_blank" class="section__link">Up For Grabs:</a>
-                Curated list of projects for new contributors
-              </li>
-            </ul>
-          </section>
-        </div>
-    </main>
-    <div class="pre-footer">
-      <div class="pre-footer__left">
-        <h2 class="pre-footer__title">Connect With The Community</h2>
-      </div>
-      <div class="pre-footer__right">
-        <a class="pre-footer__link" href="../connect">Learn More</a>
-      </div>
+  
+<header class="header">
+  <nav>
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="../index">Topics</a></li>
+      <li class="nav__item"><a class="nav__link" href="../connect">Connect</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <h1 class="title">Git & GitHub</h1>
+
+  <div class="sub-menu">
+    <ul class="sub-menu__list">
+      <li class="sub-menu__item">
+        <a class="sub-menu__link" href="#resources">Resources</a>
+      </li>
+      <li class="sub-menu__item">
+        <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
+      </li>
+      <li class="sub-menu__item">
+        <a class="sub-menu__link" href="#projects">Projects</a>
+      </li>
+    </ul>
+  </div>  <section class="theme theme--grey">
+    <h2 class="theme__title">Summary</h2>
+    <div>
+        <h3 class="section__subtitle">Git</h3>
+        <p class="section__copy">Git is a <strong>version control system used on the terminal, or command line,</strong> so developers can keep track of their the code changes on any given project. It also allows for <strong>collaboration</strong>. Instead of having to send code back and forth, like through email or FTP, developers can pull the latest version of a project and keep track of the revisions they make to the code.</p>
+        <h3 class="section__subtitle">GitHub</h3>
+        <p class="section__copy">GitHub is <strong>a development platform that uses git</strong>, where code for projects can be stored. Then other developers can others can easily view and access the code files. Other similar services include GitLab and BitBucket. I personally prefer GitHub because that's the platform I used to learn git. You can <a class="section__link" aria-label="Sign up for a GitHub account" href="https://github.com/join" target="_blank">sign up</a> for a free account if you don't already have one.</p>
+        <h3 class="section__subtitle">Documentation &amp; Messages</h3>
+        <p class="section__copy">When working with git and any service like GitHub be aware of <strong>ReadMe, Pull Requests, and Commit Messages.</strong> </p> <ul class="list"><li class="list__item"> <strong>Readme</strong>, often seen as ReadME.md, uses markdown syntax and contains documentation about the repo it is a part of. This helps other users understand your repo and your goals regarding it.</li> <li class="list__item"><strong>Pull Requests</strong> are used with teams and open source communities. On GitHub you can find the Pull Request tab right under the the repo's name. Pull Requests are used to compare changes or additions to code in the repo. To open a pull request for an open source project, fork the repo, use <code class="code">git clone</code> to clone that forked version, make a branch off of master with <code class="code">git checkout branch [branch-name]</code>. After making changes and pushing those up to your forked repo, go to the original repo, and use the Pull Request button to submit your changed code.</li> <li class="list__item"><strong>Commit Messages</strong> are messages you write in the terminal once you have added files to your remote repo with <code class="code">git add [file-name]</code>. Then use the command <code class="code">git commit -m "put text in single or double quotes"</code> This message will show up in your repo so you know when you made what changes. To make a multi-line message, simple press enter before closing the quotes.</li></ul></p>
     </div>
-  </body>
+  </section>  <section class="theme theme--resources" id="resources">
+    <h2 class="theme__title">Resources I've Found Helpful</h2>
+    <div class="section resources">  
+      <a class="resources__link" href="https://learngitbranching.js.org/" target="_blank">
+        Learn Git Branching
+        <span class="resources__meta">Exercise</span>
+      </a>
+      <a class="resources__link" href="https://try.github.io/levels/1/challenges/1" target="_blank">
+        Try Git
+        <span class="resources__meta">Exercise</span>
+      </a>
+      <a class="resources__link" href="https://github.com/jehna/Articleme-best-practices" target="_blank">
+        Best ArticleMe Practices
+        <span class="resources__meta">Article</span>
+      </a>
+      <a class="resources__link" href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf" target="_blank">
+        Git
+        <span class="resources__meta">Cheat sheet</span>
+      </a>
+      <a class="resources__link" href="https://guides.github.com/introduction/flow/" target="_blank">
+        GitHub Flow
+        <span class="resources__meta">Interactive</span>
+      </a>
+      <a class="resources__link" href="http://commonmark.org/help/tutorial/" target="_blank">
+        Markdown Reference
+        <span class="resources__meta">Exercise</span>
+      </a>
+      <a class="resources__link" href="https://help.github.com/articles/creating-a-pull-request-from-a-fork/" target="_blank">
+        Pull Request From A Fork
+        <span class="resources__meta">Article</span>
+      </a>
+      <a class="resources__link" href="http://ohshitgit.com/" target="_blank">
+        Fix A Git Mistake
+        <span class="resources__meta">Article</span>
+      </a>
+      <a class="resources__link" href="https://github.com/erlang/otp/wiki/Writing-good-commit-messages" target="_blank">
+        Writing Commit Messages
+        <span class="resources__meta">Article</span>
+      </a>
+      <a class="resources__link" href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html" target="_blank">
+        Squash with Rebase
+        <span class="resources__meta">Article</span>
+      </a>
+      <a class="resources__link" href="https://gist.github.com/corinneling/c027da69442ea08c5e67e71f72afe3c8" target="_blank">
+        Sync A Forked Repo
+        <span class="resources__meta">Gist of Mine</span>
+      </a>
+    </div>
+  </section>
+  <div class="theme theme--grey" id="cheatsheet">
+    <h2 class="theme__title">Cheat Sheet</h2>
+    <section class="section">
+      <h3 class="section__subtitle">How to set up a GitHub Repo</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">touch ReadME.md
+          git init
+          git add ReadME.md
+          git commit -m "first commit"
+          git remote add origin [github_repo_url]
+          git push -u origin master</code>
+      </div>
+      <h3 class="section__subtitle">Add Changed Files</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">git status
+          git add [name_of_file]</code>
+      </div>
+      <h3 class="section__subtitle">Local, Remote, and Origin</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">// local environment refers to your personal computer
+          // remote refers to an in between state. It's where all of your files are stored when they committed but not
+          yet pushed
+          // origin refers to GitHub's environment</code>
+      </div>
+    </section>
+  </div>
+
+   <section class="theme" id="projects">
+      <h2 class="theme__title"> Projects</h2>
+      <div class="section">  
+          <h3 class="section__subtitle">Contribute to this website</h3>
+          <p class="section__copy">You will need a basic understanding of html and css. Go to <a class="section__link" href="https://github.com/corinneling/beginners-guide" target="_blank">this repository</a>, or repo, on GitHub. Fork the repo, clone it, and add something you've learned about web development ot the bottom of the ReadME.md. And, if there are any issues in the Issue tab, comment that you will be working on it. and start tackling the issue.</p>
+          <h3 class="section__subtitle">Create your own repo or contribute to Open Source</h3>
+          <p class="section__copy">Create a repo for a project you are interested in starting, such as a personal website. Create a ReadME for the repo with some documentation, and try and make small, well documented commits. If you would rather contribute to an existing repo, check out the following links to find an Open Source project you are interested in.</p><ul class="list"><li class="list__item"> <a href="https://github.com/yourfirstpr/yourfirstpr.github.io" target="_blank" class="section__link">Your First PR:</a>Great to practice a PR, uses Jekyll</li><li class="list__item"><a href="https://up-for-grabs.net/" target="_blank" class="section__link">Up For Grabs:</a>Curated list of projects for new contributors</li></ul></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__left">
+    <h2 class="footer__title">Connect With The Community</h2>
+  </div>
+  <div class="footer__right">
+    <a class="footer__link" href="../connect">Learn More</a>
+  </div>
+</footer>
+</body>
 </html>

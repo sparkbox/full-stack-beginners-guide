@@ -1,46 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>Beginner's Guide</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link href="../src/css/main.css" rel="stylesheet">
-</head>
-<body>
-  
-<header class="header">
-  <nav>
-    <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link" href="../index">Topics</a></li>
-      <li class="nav__item"><a class="nav__link" href="../connect">Connect</a></li>
-    </ul>
-  </nav>
-</header>
+---
+layoutFile: default
+dataFile: common/*
+---
+
+{{> _header}}
+
 <main class="main">
   <h1 class="title">WordPress</h1>
 
-  <div class="sub-menu">
-    <ul class="sub-menu__list">
-      <li class="sub-menu__item">
-        <a class="sub-menu__link" href="#resources">Resources</a>
-      </li>
-      <li class="sub-menu__item">
-        <a class="sub-menu__link" href="#cheatsheet">Cheat Sheet</a>
-      </li>
-      <li class="sub-menu__item">
-        <a class="sub-menu__link" href="#projects">Projects</a>
-      </li>
-    </ul>
-  </div>  <section class="theme theme--grey">
-    <h2 class="theme__title">Summary</h2>
-    <div>
-        <h3 class="section__subtitle">CMS</h3>
-        <p class="section__copy">WordPress is a Content Managment System, or CMS, that allows you to build and manage your website with just your browser.</p>
-        <h3 class="section__subtitle">Plugins</h3>
-        <p class="section__copy">Stay away from plugins when you can because they slow down your website. Most likely your theme comes with the functionality you are looking for.</p>
-        <h3 class="section__subtitle">Speed</h3>
-        <p class="section__copy">Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated sprice to your client.</p>
-    </div>
-  </section>
+  {{> _sub-menu}}
+  {{> _summary wordpress}}
+
   <section class="theme theme--resources" id="resources">
     <h2 class="theme__title">Resources I've Found Helpful</h2>
     <div class="section resources">
@@ -136,21 +106,7 @@
     </div>
   </section>
   
-   <section class="theme" id="projects">
-      <h2 class="theme__title"> Projects</h2>
-      <div class="section">  
-          <h3 class="section__subtitle">Create a WordPress Site</h3>
-          <p class="section__copy">Use Flywheel to create a WordPress site with a focus on something you're interested in, whether that's a cause, a cute animal, or a random topic. It can be a one page site, or have multiple pages.</p>
-    </div>
-  </section>
+  {{> _projects wordpress}}
+
 </main>
-<footer class="footer">
-  <div class="footer__left">
-    <h2 class="footer__title">Connect With The Community</h2>
-  </div>
-  <div class="footer__right">
-    <a class="footer__link" href="../connect">Learn More</a>
-  </div>
-</footer>
-</body>
-</html>
+{{> _footer}}

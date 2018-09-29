@@ -1,0 +1,60 @@
+---
+layoutFile: default
+dataFile: common/*
+---
+
+{{> _header}}
+
+<main class="main">
+  <h1 class="title">JavaScript</h1>
+
+  {{> _sub-menu}}
+  {{> _summary js}}
+  {{> _resources js}}
+
+  <div class="theme theme--grey" id="cheatsheet">
+    <h2 class="theme__title">Cheatsheet</h2>
+    <section class="section">
+      <h3 class="section__subtitle">Manipulate Arrays</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">for(let i = 0; i < array.length; i++) { // do something with the array data }</code>
+      </div>
+      <div class="code__wrapper">
+        <code class="code code__block">const domElements = document.querySelectorAll('button');
+          domElements.forEach((el) => {
+          el.addEventListener('click', exFunction)
+          });
+        </code>
+      </div>
+      <div class="code__wrapper">
+        <code class="code code__block"> // make a new from inputs of their values
+          const inputs = document.querySelectorAll('inputs');
+          let arr = Array.from(inputs).map(inputs => inputs.value);
+        </code>
+      </div>
+    </section>
+    <h3 class="section__subtitle">Debugging</h3>
+    <div class="code__wrapper">
+      <code class="code code__block">// add a console.logs
+        const doesThing = () => {
+        console.log('doesThing ran');
+        // for loop
+        console.log('for loop ran');
+        }
+      </code>
+    </div>
+    </section>
+    </section>
+    <h3 class="section__subtitle">Export</h3>
+    <div class="code__wrapper">
+      <code class="code code__block">module.exports = functionName;
+      </code>
+    </div>
+    </section>
+  </div>
+
+  {{> _projects js}}
+
+</main>
+
+{{> _footer}}

@@ -1,0 +1,41 @@
+topic: Javascript
+section:
+  - subtitle: JS
+    copy: JavaScript is a <strong>scripting language</strong> on the client side of web pages that allows developers to create dynamically generated content through object oriented or functional programming patterns.
+  - subtitle: The DOM
+    copy: The DOM, or the Document Object Model, is where your code runs in the browser. JS and the DOM have a close relationship, since JS can call and store html elements in the browser and manipulate them. One of the most common ways of doing this is adding an <code class="code"> eventListener</code>. A good way to start working with JS is by adding an eventListener to a button and assigning that event a function that provides some feedback, such as a <code class="code">console.log</code> message.
+  - subtitle: Run JS
+    copy: Run your JS by referencing an external script file. Add this file as a script tag at the end of your html document. Your can then use ES6 imports to separate different aspects of your program in different files. This will make it easier to catch bugs and stay organized. Be aware that many articles online do not use ES6, yet that is the standard now.
+resource:
+  - link: http://eloquentjavascript.net/
+    text: Eloquent JS
+    type: Free Book
+  - link: http://eloquentjavascript.net/code/
+    text: Eloquent JS Sandbox
+    type: Exercises
+  - link: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+    text: Express/Node Intro
+    type: Article
+  - link: https://medium.com/front-end-hacking/wth-is-prototypal-inheritance-b0c7f4f3211e
+    text: Prototypical Inheritance
+    type: Article
+  - link: https://code.tutsplus.com/tutorials/the-essentials-of-writing-high-quality-javascript--net-15145
+    text: High Quality JS
+    type: Article
+  - link: https://babeljs.io/repl/
+    text: Babel
+    type: Sandbox
+  - link: https://seesparkbox.com/foundry/javascript_design_patterns
+    text: JS Design Patterns
+    type: Article
+  - link: https://github.com/garora/TDD-Katas/blob/master/KatasReadme.md#the-fizzbuzz-kata
+    text: FizzBuzz Kata
+    type: Exercise
+  - link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+    text: JS MDN
+    type: Guide
+project:
+  - subtitle: Start A Project
+    copy: Escape tutorial purgatory</a> by using a project to learn JS. Pick something you are interested in, whether that's accessibility, gaming, storytelling, or data. Then take a problem you would like solved related to your interest and use Javascript to solve it. You can start off with a discovery session by doing some research and brainstorming before you write any code. Then get your first draft of a program up and running. Start refactoring your code in small sections after you have it working. And, make sure to keep everything in a GitHub repo.
+  - subtitle: Complete Katas
+    copy: Complete at least two <a class="section__link" href="http://es6katas.org/" target="_blank">katas</a>. First get them working just with node. Then bring them to the browser, and give them some styling. Create a GitHub repo before you start, and push all of your changes as you go.

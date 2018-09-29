@@ -1,0 +1,53 @@
+topic: Accessibility
+section: 
+  - subtitle: A11y in Mind
+    copy: Accessibility, commonly shortened to a11y, may seem foreign at first but with some practice can become a part of day to day development. When building with accessibility keep in mind there are many different types of web accessibility, from visual to screen readers. Also, as you become more comfortable with creating accessible websites, you may come to realize, as I did, that accessibility and beautiful websites can go hand in hand. 
+  - subtitle: Visual
+    copy: Color contrast, typography, spacing, and boldness contribute to visual accessibility. When building your website be sure to test color contrast, choose a readable font, make headers bold, and set readable letter-spacing and line-height.
+  - subtitle: Screen Readers
+    copy: Keep in mind what it would be like to navigate your website with a screen reader. Are all  the links easily accessed? Can you tab through the content? Do all of your links and buttons have aria-labels if they need them? Keep these questions in mind as your read through some of the resources bellow.
+resource:
+  - link: https://seesparkbox.com/foundry/accessible_by_design
+    text: A11y By Design
+    type: Article
+  - link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Ud_the_aria-label_attribute
+    text: Aria-label
+    type: Article
+  - link: https://webaim.org/techniques/forms/advanced
+    text: Form Labels
+    type: Article
+  - link: https://webaim.org/techniques/forms/controls
+    text: Form Controls
+    type: Article
+  - link: https://www.w3.org/WAI/tutorials/images/tips/
+    text: Images
+    type: Article
+  - link: https://usecontrast.com/guide
+    text: Contrast Guide
+    type: Article
+  - link: https://internedishard.com/html-and-css/semantic-html/
+    text: Semantic HTML
+    type: Article
+  - link: http://pa11y.org/
+    text: Pa11y
+    type: Tool
+  - link: https://colorable.jxnblk.com/
+    text: Contrast Ratio
+    type: Tool
+  - link: https://a11yproject.com/resources
+    text: A11y Project Resources
+    type: Article
+  - link: https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/
+    text: Extend Semantic HTML
+    type: Article
+  - link: https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts
+    text: VO Shortcuts
+    type: Cheat Sheet
+  - link: https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts
+    text: NVDA Shortcuts
+    type: Cheat Sheet
+project:
+  - subtitle: Test a website
+    copy: Choose a website you use the most, and try to use only the keyboard to navigate through it. Then use a screen reader, Voice Over and NVDA are both free options, to go through the website. This will help you understand what is best practice when building an accessible website.
+  - subtitle: Create an a11y element on CodePen
+    copy: Choose a website feature such as a form, a hamburger menu, an FAQ section etc. Use semantic  HTML, then style it with passing contrasting colors, and a readable font. Then make sure to add accessible attributes such as aria-labels on links and alt tags on images.

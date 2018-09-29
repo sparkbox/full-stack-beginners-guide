@@ -1,0 +1,11 @@
+topic:
+section:
+  - subtitle: CMS
+    copy: WordPress is a Content Managment System, or CMS, that allows you to build and manage your website with just your browser.
+  - subtitle: Plugins
+    copy: Stay away from plugins when you can because they slow down your website. Most likely your theme comes with the functionality you are looking for.
+  - subtitle: Speed
+    copy: Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated sprice to your client.
+project:
+  - subtitle: Create a WordPress Site
+    copy: Use Flywheel to create a WordPress site with a focus on something you're interested in, whether that's a cause, a cute animal, or a random topic. It can be a one page site, or have multiple pages.

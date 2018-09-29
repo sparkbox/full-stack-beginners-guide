@@ -1,0 +1,46 @@
+---
+layoutFile: default
+dataFile: common/*
+---
+
+{{> _header}}
+
+<main class="main">
+  <h1 class="title">Git & GitHub</h1>
+
+  {{> _sub-menu}}
+  {{> _summary git}}
+  {{> _resources git}}
+
+  <div class="theme theme--grey" id="cheatsheet">
+    <h2 class="theme__title">Cheat Sheet</h2>
+    <section class="section">
+      <h3 class="section__subtitle">How to set up a GitHub Repo</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">touch ReadME.md
+          git init
+          git add ReadME.md
+          git commit -m "first commit"
+          git remote add origin [github_repo_url]
+          git push -u origin master</code>
+      </div>
+      <h3 class="section__subtitle">Add Changed Files</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">git status
+          git add [name_of_file]</code>
+      </div>
+      <h3 class="section__subtitle">Local, Remote, and Origin</h3>
+      <div class="code__wrapper">
+        <code class="code code__block">// local environment refers to your personal computer
+          // remote refers to an in between state. It's where all of your files are stored when they committed but not
+          yet pushed
+          // origin refers to GitHub's environment</code>
+      </div>
+    </section>
+  </div>
+
+  {{> _projects git}}
+
+</main>
+
+{{> _footer}}
