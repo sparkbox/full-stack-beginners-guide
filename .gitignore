@@ -1,5 +1,7 @@
-.sass-cache/
-page-template.html
-animations.html
 package-lock.json
 node_modules/
+
+# Build
+topic/
+topic/*
+src/css/

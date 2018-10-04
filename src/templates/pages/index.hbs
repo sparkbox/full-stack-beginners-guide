@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Learn Web Development Through Approachable Projects</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./css/main.css" rel="stylesheet">
-</head>=
-<body>
-  <header class="header">
-    <nav>
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="index">Topics</a></li>
-        <li class="nav__item"><a class="nav__link" href="connect">Connect</a></li>
-      </ul>
-    </nav>
-  </header>
+---
+layoutFile: default
+dataFile: common/*
+---
+{{> _header}}
+
   <main class="main main--home">
     <section class="section section--home">
       <h1 class="title">Learn Web Development</h1>
@@ -93,13 +83,6 @@
       </section>
     </div>
   </main>
-  <div class="footer">
-    <div class="footer__left">
-      <h2 class="footer__title">Connect With The Community</h2>
-    </div>
-    <div class="footer__right">
-      <a class="footer__link" href="connect">Learn More</a>
-    </div>
-  </div>
-</body>
-</html>
+
+  {{> _footer}}
+
