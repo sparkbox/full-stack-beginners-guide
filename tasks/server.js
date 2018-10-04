@@ -1,13 +1,16 @@
+const colors = require('colors');
 const express = require('express');
+const open = require('opener');
 const app = express();
 
 const PORT = process.env.PORT || 8000;
 
-app.use('/', express.static(__dirname + "/../", {
+app.use('/', express.static('dist', {
   extensions: ['html', 'htm']
 }));
 
-
 app.listen(PORT, () => {
-  console.log(`Local beginners guide listening on port ${PORT}!`);
+  console.log(`\n${colors.bgGreen(' - Server started - ').black}\n\nListening on localhost:${colors.green(PORT)}\n`);
 });
+
+open('http://localhost:8000/');

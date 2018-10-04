@@ -8,11 +8,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all -s sass html -p server",
+    "start": "npm-run-all -s sass html -p watch server",
     "server": "node tasks/server",
     "html": "node tasks/html",
-    "sass": "node-sass src/scss/ -o src/css/ --output-style compressed --color",
-    "sass:watch": "node-sass src/scss/ -wo src/css/"
+    "sass": "node tasks/sass",
+    "watch": "node tasks/watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "pa11y": "^5.0.4"
   },
   "dependencies": {
+    "chokidar": "^2.0.4",
     "colors": "^1.3.2",
     "compression": "^1.7.3",
     "express": "^4.16.3",
@@ -37,8 +38,9 @@
     "helmet": "^3.13.0",
     "moment": "^2.22.2",
     "node-sass": "^3.13.1",
-    "nodemon": "^1.18.3",
     "npm-run-all": "^4.1.3",
+    "opener": "^1.5.1",
+    "rimraf": "^2.6.2",
     "shelljs": "^0.8.2",
     "yamljs": "^0.3.0"
   }

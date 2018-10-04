@@ -14,7 +14,7 @@ const PATHS = {
   pages: './src/templates/pages/**/*.hbs',
   partials: './src/templates/partials/**/*.hbs',
   data: './data',
-  dest: './topic'
+  dest: './dist'
 };
 
 const readFile = file => fs.readFileSync(file, 'utf8');

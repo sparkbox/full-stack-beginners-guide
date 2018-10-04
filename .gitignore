@@ -2,6 +2,6 @@ package-lock.json
 node_modules/
 
 # Build
-topic/
-topic/*
+dist/
+dist/*
 src/css/
