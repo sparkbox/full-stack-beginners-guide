@@ -1,9 +1,8 @@
 <section class="theme theme--resources" id="resources">
   <h2 class="theme__title">Resources I've Found Helpful</h2>
-  <div class="section resources">  
+  <div class="resources">  
     {{#each resource}}
-    <a class="resources__link" href="{{link}}" target="_blank">
-      {{text}}
+    <a class="resources__link" href="{{link}}" target="_blank">{{text}}
       <span class="resources__meta">{{type}}</span>
     </a>
     {{/each}}

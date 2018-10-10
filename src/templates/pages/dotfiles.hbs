@@ -12,46 +12,46 @@ dataFile: common/a11y
   {{> _summary dotfiles}}
   {{> _resources dotfiles}}
 
-  <div class="theme theme--grey" id="cheatsheet">
-    <h2 class="theme__title">Cheat Sheet</h2>
-    <section class="section">
-      <h3 class="section__subtitle">Create a dotfile</h3>
-      <div class="code__wrapper">
-        <code class="code__block">touch .bashrc
-        </code>
-      </div>
-      <h3 class="section__subtitle">Refresh bash to see changes</h3>
-      <div class="code__wrapper">
-        <code class="code__block">source ~/.bashrc
-        </code>
-      </div>
-      <h3 class="section__subtitle">Aliases</h3>
-      <div class="code__wrapper">
-        <code class="code__block">alias c="clear"
-          alias ll="ls -lha"
-          alias gs="git status"
-          alias ga="git add"
-          alias gc="git commit -m"
-          # Then running <strong>c</strong> in your terminal will be the same as running <strong>clear</strong>, and so
-          on</code>
-      </div>
-      <h3 class="section__subtitle">Functions</h3>
-      <div class="code__wrapper">
-        <code class="code__block">function mkd () {
-          mkdir -p "$@" && cd "$@"
-          }
-          # make a directory and go into it</code>
-      </div>
-      <div class="code__wrapper">
-        <code class="code__block">function happydance {
-          echo ' ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓'
-          }
-          # congratulate yourself with a happy dance</code>
-      </div>
-    </section>
+  <div class="cheatsheet theme theme--grey" id="cheatsheet">
+  <h2 class="theme__title">Cheat Sheet</h2>
+  {{#markdown}}
+  ### Create a dotfile
+  ```
+  touch .bashrc
+  ```
+
+  ### Refresh bash to see changes
+  ```
+  source ~/.bashrc
+  ```
+
+  ### Aliases
+  ```
+  alias c="clear"
+  alias ll="ls -lha"
+  alias gs="git status"
+  alias ga="git add"
+  alias gc="git commit -m"
+  # Then running *c* in your terminal will be the same as running *clear*, and so on
+  ```
+  ### Functions
+  ```
+  function mkd () {
+    mkdir -p "$@" && cd "$@"
+  }
+  # make a directory and go into it
+  ```
+  ```
+  function happydance {
+    echo ' ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓'
+  }
+  # congratulate yourself with a happy dance
+  ```
+  {{/markdown}}
   </div>
 
   {{> _projects dotfiles}}
 
 </main>
+
 {{> _footer}}

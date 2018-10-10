@@ -12,32 +12,28 @@ dataFile: common/*
     {{> _summary a11y}}
     {{> _resources a11y}}
 
-      <div class="theme theme--grey" id="cheatsheet">
-        <h2 class="theme__title">Cheat Sheet</h2>
-        <h3 class="section__subtitle">Attributes</h3>
-        <section class="section">
-          <div class="code__wrapper">
-              <code class="code__block">aria-label="Explain what the screen reader should read"
-                // add to a link that doesn't have descriptive text
-              </code>
-          </div>
-          <div class="code__wrapper">
-              <code class="code__block">aria-expanded="true"
-                // tells a screen reader if an element, such as a hamburger menu, is opened or closed
-              </code>
-          </div>
-          <div class="code__wrapper">
-              <code class="code__block">alt="Explain what your picture is showing"
-                 // always have an alt attribute in img tags
-              </code>
-          </div>
-          <div class="code__wrapper">
-            <code class="code__block">aria-hidden="true"
-              // hide an element from a screen reader such as a decorative elements
-            </code>
-          </div>
-        </section>
-      </div>
+  <div class="cheatsheet theme theme--grey" id="cheatsheet">
+  <h2 class="theme__title">Cheat Sheet</h2>
+  {{#markdown}}
+  ### Attributes
+  ```
+  aria-label="Explain what the screen reader should read"
+  // add to a link that doesn't have descriptive text
+  ```
+  ```
+  aria-expanded="true"
+  // tells a screen reader if an element, such as a hamburger menu, is opened or closed
+  ```
+  ```
+  alt="Explain what your picture is showing"
+  // always have an alt attribute in img tags
+  ```
+  ```
+  aria-hidden="true"
+  // hide an element from a screen reader such as a decorative elements
+  ```
+  {{/markdown}}
+  </div>
     
     {{> _projects a11y}}
 

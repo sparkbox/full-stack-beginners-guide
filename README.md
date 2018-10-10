@@ -45,3 +45,34 @@ This guide includes the following topics: Git & GitHub, Dotfiles, HTML & CSS, Ja
 
 ### Hosting
 This project is hosted through GitHub pages from the `gh-pages` branch. Once a PR is approved, it will be merged into master. Then those changes will be deployed to the `gh-pages` branch. 
+
+### Contribute
+
+**Open Source Contibutors**
+
+1. Fork the repository
+2. Clone the forked repository in your ternminal
+	- `git clone *url-of-repo*`
+3. In your local environment create a branch off of master
+	- `git checkout -b *name--of-branch*`
+2. Make changes and push them up with a commit following [this style](https://github.com/sparkbox/standard/tree/master/code-style/git#the-art-of-the-commit-message).
+	- `git commit -m 'type of changes: descripe changes`
+	- i.e `git commit -m 'fix: adds a11y attribute to links'`
+3. Navigate to this repository. 
+4. Open a PR with your branch compared to this repo's master branch
+5. Let a collaborator take your PR and review it
+6. Keep an eye out for any feedback or comments 
+7. Once approved and no more changes are needed
+   - [Sync your forked repo](https://gist.github.com/corinneling/c027da69442ea08c5e67e71f72afe3c8) with this repo's master branch
+   - Have your reviewer merge your branch into master with fast forward only 
+   - They will push up the updated master branch
+
+**Claiming an Issue**
+
+If you find an issue you would like to tackle, add a comment to the issue saying you will be working on it. Then once you make your PR, reference the issue.
+
+**Feedback on PRs**
+
+You will likely get feedback on your PR, related to how you can change or improve it. Make sure to check back on your PR when you get a chance to see if your reviewer has tagged your github handle in a comment and left you some feedback.
+
+_PRs must be approved by a reviewer to be merged_

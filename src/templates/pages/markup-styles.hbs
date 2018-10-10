@@ -11,35 +11,32 @@ dataFile: common/*
   {{> _sub-menu}}
   {{> _summary markup-styles}}
   {{> _resources markup-styles}}
-
-  <div class="theme theme--grey" id="cheatsheet">
-    <h2 class="theme__title">Cheat Sheet</h2>
-    <section class="section">
-      <h3 class="section__subtitle">Pseudo Element</h3>
-      <div class="code__wrapper">
-        <code class="code__block">.link::before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 1.5rem;
-          left: 0;
-          height: 0.25rem;
-          width: 100%;
-          background-color: black;
-          }
-        </code>
-      </div>
-      <h3 class="section__subtitle">Viewport Tag</h3>
-      <div class="code__wrapper">
-        <code class="code__block">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        </code>
-      </div>
-      <h3 class="section__subtitle">Link to CSS</h3>
-      <div class="code__wrapper">
-        <code class="code__block">&lt;link href="styles/main.css" rel="stylesheet"&gt;
-        </code>
-      </div>
-    </section>
+  
+  <div class="cheatsheet theme theme--grey" id="cheatsheet">
+  <h2 class="theme__title">Cheat Sheet</h2>
+  {{#markdown}}
+  ### Pseudo Element
+  ```
+  .link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    height: 0.25rem;
+    width: 100%;
+    background-color: black;
+  }
+  ```
+  ### Viewport Tag
+  ```
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  ```
+  ### Link to CSS
+  ```
+  <link href="styles/main.css" rel="stylesheet">
+  ```
+  {{/markdown}}
   </div>
 
   {{> _projects markup-styles}}

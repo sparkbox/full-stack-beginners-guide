@@ -1,4 +1,4 @@
-topic:
+topic: Git & GitHub
 section:
   - subtitle: Git
     copy: Git is a <strong>version control system used on the terminal, or command line,</strong> so developers can keep track of their the code changes on any given project. It also allows for <strong>collaboration</strong>. Instead of having to send code back and forth, like through email or FTP, developers can pull the latest version of a project and keep track of the revisions they make to the code.
