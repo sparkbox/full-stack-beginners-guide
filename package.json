@@ -36,6 +36,8 @@
     "globby": "^8.0.1",
     "handlebars": "^4.0.12",
     "helmet": "^3.13.0",
+    "helper-markdown": "^1.0.0",
+    "markdown-to-html": "0.0.13",
     "moment": "^2.22.2",
     "node-sass": "^3.13.1",
     "npm-run-all": "^4.1.3",

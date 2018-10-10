@@ -12,9 +12,7 @@ This guide includes the following topics: Git & GitHub, Dotfiles, HTML & CSS, Ja
 ## Contribute
 
 ### Project Setup
-- In your terminal or command line run `git clone https://github.com/corinneling/beginners-guide.git`
-    - This will copy all of the files from this repo onto your local computer
-- Navigate into the project folder by running `cd beginners-guide`
+- Navigate into the project folder
 - Check that you have node and npm installed
     - Run `node -v`
         - If there is no output [install node](https://nodejs.org/en/download/)
@@ -34,16 +32,16 @@ This guide includes the following topics: Git & GitHub, Dotfiles, HTML & CSS, Ja
             - All of the handlebars files are located in the `templates` folder. Handlebars is a templating language that makes it easier to maintain static sites, especially when there are instances of repetitive markup, such as a header or footer that is used on every page.
                 - `layouts` contains a file that sets the layout for all of the pages.
                 - `pages` is where all of the pages live before they are compiled into `html` files. Each page must contain the following code at the beginning of the file:
-                    ```
-                    ---
+                    ```---
                     layoutFile: default
                     dataFile: common/*
-                    ---
-                    ```
+                    ---```
+                    
                     - The `layoutFile` references the file in the `layout` folder, which sets the html, head, and body tag.
                     - The `dataFile` references the directory that data will be pulled into the file when it's compiled. 
           
           		- `partials` is where the different pieces of the page live. These partials can be reused across the site with different data being introduced for each instance.
+                  - `blog` contains all of the blog posts for the TIL page. These handlebar files will use the markdown helper so posts can be written using markdown
 
 ### Hosting
 This project is hosted through GitHub pages from the `gh-pages` branch. Once a PR is approved, it will be merged into master. Then those changes will be deployed to the `gh-pages` branch. 

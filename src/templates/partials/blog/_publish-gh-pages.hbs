@@ -1,0 +1,19 @@
+  {{#markdown}}
+  ## How to Host with A GitHub Pages Branch
+  I started hosting this beginner's guide site with a github pages branch because  I am using handlebar templates to build out the pages. That way I  can have a clean build for the project. My goals for hosting the beginners guide were to have all of the  built HTML files in the root of the project, and to have a clean build  where I could clean out the static folder before building the static  assets into it each time. This is how I set that up with a GitHub Pages branch:
+
+  1. From the master branch create a gh-pages branch
+     * `git checkout -b gh-pages`
+  2. Push up the branch
+     * `git push -u origin gh-pages`
+  3. Run your build tasks. Mine is _npm start_. It runs a few npm scripts from the package.json, and compiles the static assets in a folder called *dist*
+     * `npm start`
+  4. Navigate to the static assets folder
+     * `cd dist`
+  5. Under settings in the repo set the hosting to publish with the gh-pages branch
+  6. Make sure you are still on the gh-pages branch
+     * `git branch | grep \*`
+  7. Initialize a new git repo in the dist folder.
+     * `git init`
+  8. Push the dist folder up. Since the folder was initialized then the github pages branch will think it's the root of the branch. And everything built into that folder will be published.
+{{/markdown}}
