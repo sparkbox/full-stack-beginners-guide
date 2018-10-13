@@ -12,6 +12,8 @@
 
   &--grey {
     background-color: lighten($c-grey, 70%);
+    position: relative;
+    z-index: 0;
   }
     
   &__title {
