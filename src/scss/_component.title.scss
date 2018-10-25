@@ -1,0 +1,10 @@
+.title {
+  font-size: $font-xl;
+  margin: 3rem auto;
+  text-align: center;
+
+  @media (min-width: $bp-md) {
+    margin: 2rem auto 1rem;
+    font-size: $font-xxl;
+  }
+}

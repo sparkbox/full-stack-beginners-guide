@@ -16,7 +16,7 @@
   &__left {
     width: 100%;
 
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       width: 60%;
     }
   }
@@ -24,7 +24,7 @@
   &__right {
     width: 90%;
 
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       width: 40%;
     }
   }

@@ -3,7 +3,7 @@
   margin: 0;
   border-radius: 1.5rem;
 
-  @media (min-width: $first-bp) {
+  @media (min-width: $bp-md) {
     padding: 4rem 6rem;
     margin: 2rem auto;
     max-width: 64rem;
@@ -19,12 +19,12 @@
   &__title {
     color: $c-blue-yonder;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: $font-sm;
     font-weight: normal;
 
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       text-align: center;
-      font-size: 1.875rem;
+      font-size: $font-lg;
       margin: 0 0 3rem 0;
     }
   }

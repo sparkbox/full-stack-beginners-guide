@@ -27,11 +27,11 @@
     margin: auto;
     z-index: -1;
     background-color: $c-blue-yonder;
-    box-shadow: 0px 16px 14px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 0.875rem -0.625rem rgba($c-true-black, 0.2);
   }
 
   &__link {
-    font-size: 1.5rem;
+    font-size: $font-md;
     width: 100%;
     text-align: center;
 
@@ -50,7 +50,7 @@
 
   &__title {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: $font-xxl;
     font-weight: 700;
     padding-top: 2rem;
     margin-bottom: 0;
@@ -61,7 +61,7 @@
 
   &__subtitle {
     color: $c-grey;
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       margin: 3rem 0;
     }
   }
@@ -87,7 +87,7 @@
       left: 0;
       width: 100%;
       z-index: -1;
-      box-shadow: 0px 6px 8px 0px rgba($c-blue-yonder, 0.5);
+      box-shadow: 0 0.375rem 0.5rem rgba($c-blue-yonder, 0.5);
       background: $c-blue-yonder;
       background: linear-gradient(90deg, $c-blue-yonder 0%, $c-blue-yonder 100%);
       transition: all 200ms ease-in;
@@ -100,14 +100,14 @@
     &:hover::before {
       height: 100%;
       transform: scale(1.2, 1);
-      background: linear-gradient(90deg,  $c-blue-yonder 0%, rgba(88,143,182,1)  100%);
+      background: linear-gradient(90deg,  $c-blue-yonder 0%, $c-blue-skies 100%);
     }
   }
 
   &__section {
       padding: 4rem 0;
 
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       padding: 2rem 0;
     }
   }

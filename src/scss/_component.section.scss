@@ -10,24 +10,24 @@
 
   &__subtitle {
     margin: 1.5rem 0 1rem;
-    font-size: 1.75rem;
+    font-size: $font-lg;
     line-height: 1.5;
 
-    @media (min-width: $first-bp) {
+    @media (min-width: $bp-md) {
       margin: 1rem 0;
     }
   }
 
   &__copy {
-    font-size: 1rem;
+    font-size: $font-xxs;
     line-height: 2;
 
     &--home {
       line-height: 1.75;
     }
 
-    @media (min-width: $first-bp) {
-      font-size: 1.125rem;
+    @media (min-width: $bp-md) {
+      font-size: $font-xs;
     }
   }
 
