@@ -11,6 +11,7 @@
     "start": "npm-run-all -s sass html -p watch server",
     "server": "node tasks/server",
     "html": "node tasks/html",
+    "stylelint": "node tasks/stylelint",
     "sass": "node tasks/sass",
     "watch": "node tasks/watch"
   },
@@ -25,7 +26,9 @@
   },
   "homepage": "https://corinneling.github.io/beginners-guide/",
   "devDependencies": {
-    "pa11y": "^5.0.4"
+    "pa11y": "^5.0.4",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
     "chokidar": "^2.0.4",
