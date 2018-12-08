@@ -1,88 +1,30 @@
 ---
 layoutFile: default
-dataFile: common/*
+dataFile: common/home
 ---
 {{> _header}}
 
-  <main class="main main--home">
-    <section class="section section--home">
-      <h1 class="title">Learn Web Development</h1>
-      <ul class="list list--home">
-        <li class="list__item">Quick explanations</li>
-        <li class="list__item">Cheat Sheets</li>
-        <li class="list__item">External Resources</li>
-        <li class="list__item">Projects</li>
+<main>
+  <section class="obj-layout-width">
+    <div class="obj-layout-row">
+      <h1>Learn Web Development</h1>
+      <ul class="cmp-list cmp-list--hrz">
+        <li class="cmp-list__item">Quick explanations</li>
+        <li class="cmp-list__item">Cheat Sheets</li>
+        <li class="cmp-list__item">External Resources</li>
+        <li class="cmp-list__item">Projects</li>
       </ul>
-      <p class="section__copy section__copy--home">
-        Made for those with a fast paced life, looking for a job in web development. Complete, approachable projects to
-        gain the skills
-        needed to be a web developer. Each section contains a brief summary of the subtopics, a list of external
-        resources I have used and found the most helpful, a small cheat sheet, and project prompts.
+      <p>Made for those with a fast paced life, looking for a job in web development. This beginner's guide
+      is focused on approachable projects to help you gain the skills needed to become a web developer. 
+      Each section contains a brief summary of the topic, a list of external resources I have used and 
+      found the most helpful, a small cheat sheet, and project prompts.
       </p>
-    </section>
-    <div class="section-wrapper">
-      <section class="topic">
-        <a class="page-link" href="./git" aria-label="Learn about git">
-          <h2 class="topic__title">Git & GitHub</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Documentation</li>
-            <li class="topic__list--item">Contribute</li>
-            <li class="topic__list--item">Workflow</li>
-          </ul>
-        </a>
-      </section>
-      <section class="topic">
-        <a class="page-link" href="./dotfiles" aria-label="Learn about dotfiles">
-          <h2 class="topic__title">Dotfiles</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Set up</li>
-            <li class="topic__list--item">Functions</li>
-            <li class="topic__list--item">Aliases</li>
-          </ul>
-        </a>
-      </section>
-      <section class="topic">
-        <a class="page-link" href="./markup-styles" aria-label="Learn about markup and CSS">
-          <h2 class="topic__title">HTML & CSS</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Semantic Tags</li>
-            <li class="topic__list--item">CSS Layout</li>
-            <li class="topic__list--item">Naming</li>
-          </ul>
-        </a>
-      </section>
-      <section class="topic">
-        <a class="page-link" href="./javascript" aria-label="Learn about JS">
-          <h2 class="topic__title">JavaScript</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Functional</li>
-            <li class="topic__list--item">Object Oriented</li>
-            <li class="topic__list--item">Classes</li>
-          </ul>
-        </a>
-      </section>
-      <section class="topic">
-        <a class="page-link" href="./accessibility" aria-label="Learn about accessibility">
-          <h2 class="topic__title">Accessibility</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Forms</li>
-            <li class="topic__list--item">Aria</li>
-            <li class="topic__list--item">Color Contrast</li>
-          </ul>
-        </a>
-      </section>
-      <section class="topic">
-        <a class="page-link" href="./wordpress" aria-label="Learn about WordPress">
-          <h2 class="topic__title">WordPress</h2>
-          <ul class="topic__list">
-            <li class="topic__list--item">Plugins</li>
-            <li class="topic__list--item">Speed</li>
-            <li class="topic__list--item">Themes</li>
-          </ul>
-        </a>
-      </section>
     </div>
-  </main>
+    <div class="obj-layout-columns">
+      {{> _cards home}}
+    </div>
+  </section>
+</main>
 
   {{> _footer}}
 

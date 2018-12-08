@@ -1,0 +1,40 @@
+.cmp-nav {
+  height: 4rem;
+  background: $c-grey;
+
+  @media (min-width: $bp-md) {
+    background: transparent;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 1.5rem;
+    list-style: none;
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (min-width: $bp-md) {
+      width: auto;
+      padding: 0 1rem;
+    }
+  }
+
+  &__link {
+    color: $c-yonder;
+    padding: 0.25rem 0;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 0.125rem solid $c-white;
+    transition: color $transition, border-color $transition;
+
+    &:hover {
+      color: $c-grey;
+      border-color: $c-grey;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.cmp-resources {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2rem;
+
+  &__link {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: $c-yonder;
+    background-color: $c-white;
+    border: 0.125rem solid $c-yonder;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.75rem 0.5rem -0.5rem rgba($c-chetwode, 0.25);
+    transition: border $transition, color $transition, background-color $transition, box-shadow $transition;
+
+    &:hover {
+      color: $c-white;
+      background-color: $c-yonder;
+      border: 0.125rem solid $c-yonder;
+      box-shadow: 0 0.875rem 0.375rem -0.5rem rgba($c-chetwode, 0);
+    }
+  }
+
+  &__meta {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: $c-grey-7;
+    transition: color $transition;
+
+    .cmp-resources__link:hover & {
+      color: $c-white;
+    }
+  }
+}

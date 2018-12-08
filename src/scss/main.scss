@@ -27,9 +27,9 @@
 //    to write comments describing the colors and font stacks as a guide.
 //    If using features such as custom properties, those that are global
 //    custom properties should be described in this section.
-@import "settings.variables";
-@import "settings.variables.colors";
-@import "settings.variables.fonts";
+@import "settings.var.general";
+@import "settings.var.colors";
+@import "settings.var.fonts";
 
 
 // =====================================================================
@@ -50,33 +50,34 @@
 //    Styling for bare HTML elements (like H1, A, etc.). These come with
 //    default styling from the browser so we can redefine them here. There
 //    shouldn’t be any classes or ids used in this section.
-@import "elements.base";
+@import "el.normalize";
+@import "el.text";
 
 // =====================================================================
 // 5. Objects
 //    Class-based selectors which define undecorated design patterns,
 //    for example media object known from OOCSS.
-@import "objects.layout";
+@import "obj.layout.direction";
+@import "obj.layout.spacing";
+@import "obj.layout.width";
 
 // =====================================================================
 // 6. Components
 //    Specific UI components. This is where majority of our work takes place
 //    and our UI components are often composed of Objects and Components
-@import "component.header";
-@import "component.title";
-@import "component.nav";
-@import "component.sub-menu";
-@import "component.full-page";
-@import "component.theme";
-@import "component.list";
-@import "component.section";
-@import "component.card";
-@import "component.resources";
-@import "component.code-block";
-@import "component.cheatsheet";
-@import "component.footer";
+@import "cmp.card";
+@import "cmp.footer";
+@import "cmp.link";
+@import "cmp.list";
+@import "cmp.nav";
+@import "cmp.resources";
+@import "cmp.sub-menu";
+@import "cmp.subtitle";
+@import "cmp.title";
 
 // =====================================================================
 // 7. Utilities
 //    Utilities and helper classes with ability to override anything
 //    which goes before in the triangle, eg. hide helper class
+@import "util.margin";
+@import "util.theme";

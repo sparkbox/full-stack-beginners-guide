@@ -1,0 +1,37 @@
+card:
+  - link: git
+    title: Git & GitHub
+    list:
+      - item: Documentation
+      - item: Contribute
+      - item: Workflow
+  - link: dotfiles
+    title: Dotfiles
+    list:
+      - item: Set up
+      - item: Functions
+      - item: Aliases
+  - link: markup-styles
+    title: HTML & CSS
+    list:
+      - item: Semantic Tags
+      - item: CSS Layout
+      - item: Naming
+  - link: javascript
+    title: JavaScript
+    list:
+      - item: Functional
+      - item: Object Oriented
+      - item: Classes
+  - link: accessibility
+    title: Accessibility
+    list:
+      - item: Forms
+      - item: Aria
+      - item: Color Contrast
+  - link: wordpress
+    title: WordPress
+    list:
+      - item: Plugins
+      - item: Speed
+      - item: Themes

@@ -5,15 +5,15 @@ dataFile: common/*
 
 {{> _header}}
 
-<main class="main">
-  <h1 class="title">Git & GitHub</h1>
+<main class="obj-layout-width">
+  <h1 class="cmp-title">Git & GitHub</h1>
 
   {{> _sub-menu}}
   {{> _summary git}}
   {{> _resources git}}
 
-  <div class="cheatsheet theme theme--grey" id="cheatsheet">
-  <h2 class="theme__title">Cheat Sheet</h2>
+  <div class="obj-layout-spacing theme-bg" id="cheatsheet">
+  <h2 class="subtitle">Cheat Sheet</h2>
   {{#markdown}}
   ### How to set up a GitHub Repo
   ```
@@ -34,8 +34,7 @@ dataFile: common/*
   ### Local, Remote, and Origin
   ```
   // local environment refers to your personal computer
-  // remote refers to an in between state. It's where all of your files are stored when they committed but not
-          yet pushed
+  // remote refers to an in between state. It's where all of your files are stored when they committed but not yet pushed
   // origin refers to GitHub's environment
   ```
   {{/markdown}}

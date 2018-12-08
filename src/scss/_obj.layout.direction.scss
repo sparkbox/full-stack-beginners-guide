@@ -1,0 +1,14 @@
+.obj-layout-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.obj-layout-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+  }
+}

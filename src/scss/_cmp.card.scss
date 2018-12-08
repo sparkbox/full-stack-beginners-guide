@@ -1,0 +1,54 @@
+.cmp-card {
+  cursor: pointer;
+  flex-basis: 14%;
+  margin: 1rem 0;
+  border: 0.125rem solid $c-yonder;
+  border-radius: 0.25rem;
+  background-color: $c-white;
+  box-shadow: $shadow rgba($c-grey, 0.2);
+  transition: background-color 250ms linear, box-shadow 250ms linear;
+
+  &:hover {
+    background-color: $c-yonder;
+    box-shadow: $shadow rgba($c-grey, 0);
+  }
+
+  &__title {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: $c-yonder;
+    font-weight: 700;
+    text-align: center;
+    transform-origin: 10% 100%;
+    transform: translateY(2.5rem) scale(1);
+    transition: color 250ms linear, transform 250ms linear;
+
+    .cmp-card:hover & {
+      color: $c-white;
+      transform: translateY(0) translateX(0) scale(1);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    transform: translateY(0);
+  }
+
+  &__item {
+    opacity: 0;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    color: $c-white;
+    transform-origin: 50% 100%;
+    transform: scale(0.1, 1) translate(0, 1rem);
+    transition: opacity 250ms linear, transform 250ms linear;
+
+    .cmp-card:hover & {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+}

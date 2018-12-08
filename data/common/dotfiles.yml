@@ -3,9 +3,9 @@ section:
   - subtitle: What & Why
     copy: A dotfile is any file that starts with a dot. <strong>Configurations for apps and systems</strong> are stored in them. For example, most text editors will have a dotfile to store settings such as how many spaces a tab should trigger. One of the most common ways developers use dotfiles is for their scripting language of choice. The dotfiles for your shell language will also be in that language. My examples will be for the Bash shell language.
   - subtitle: Aliases
-    copy: Aliases custom shortcuts assigned to commands you use in the terminal, or command line. They follow a very specific syntax <code class="code">alias shortcutName="originalCommand"</code>. You can make one directly in the command line, but to create a permanent alias, put it in an alias dotfile with the name .aliases, and link that to your main bash dotfile. This is in my .bashrc and links my other dotfiles, since .bashrc, is the file the computer runs. <div class="code__wrapper"> <code class="code code__block">for file in ~/.{path,bash_prompt,aliases,functions}; do [ -r "$file" ] && [ -f "$file" ] && source "$file"; done; unset file; </code> </div>
+    copy: Aliases custom shortcuts assigned to commands you use in the terminal, or command line. They follow a very specific syntax <code>alias shortcutName="originalCommand"</code>. You can make one directly in the command line, but to create a permanent alias, put it in an alias dotfile with the name .aliases, and link that to your main bash dotfile. This is in my .bashrc and links my other dotfiles, since .bashrc, is the file the computer runs. <pre><code>for file in ~/.{path,bash_prompt,aliases,functions}; do [ -r "$file" ] && [ -f "$file" ] && source "$file"; done; unset file; </code></pre>
   - subtitle: Functions
-    copy: Functions are similar to aliases. They are in a dotfile named .functions, and consist of creating shortcuts to run a command. Yet, functions can be more complex than aliases, and perform multiple actions. They have a similar syntax to functions in JS. <code class="code">function <em>name</em>() { <em>commands</em> }</code>.
+    copy: Functions are similar to aliases. They are in a dotfile named .functions, and consist of creating shortcuts to run a command. Yet, functions can be more complex than aliases, and perform multiple actions. They have a similar syntax to functions in JS. <code>function <em>name</em>() { <em>commands</em> }</code>.
 resource:
   - link: https://dotfiles.github.io/
     text: GitHub Dotfiles Guide
@@ -36,6 +36,6 @@ resource:
     type: Gist of Mine
 project:
   - subtitle: Create your own dotfiles
-    copy: Take a look at <a class="section__link" href="https://dotfiles.github.io/" target="_blank">some dotfile repositories</a>, and start creating your own aliases and functions. Start small, add new ones as you work on projects, and don't be afraid to be creative. If using bash, you will want <code class="code">.bashrc, .bash_profile, .bash_prompt, .aliases, and .functions</code> files.
+    copy: Take a look at <a class="cmp-link" href="https://dotfiles.github.io/" target="_blank">some dotfile repositories</a>, and start creating your own aliases and functions. Start small, add new ones as you work on projects, and don't be afraid to be creative. If using bash, you will want <code>.bashrc, .bash_profile, .bash_prompt, .aliases, and .functions</code> files.
   - subtitle: Create a dotfiles repo
     copy: Create a repo on GitHub or any other similar service, and add your dotfiles to the repo. Then you will be able to pull them down for any new system you're on, and it's a helpful way to practice making commits.

@@ -1,0 +1,24 @@
+.cmp-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding: 4rem 6rem;
+  background-color: $c-grey-2;
+  color: $c-grey-e;
+
+  &__button {
+    align-self: center;
+    padding: 1rem 6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    color: $c-grey-2;
+    background-color: $c-grey-e;
+    transition: background-color $transition, color $transition;
+
+    &:hover {
+      background-color: $c-yonder;
+      color: $c-white;
+    }
+  }
+}

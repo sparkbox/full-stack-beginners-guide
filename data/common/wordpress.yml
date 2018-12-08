@@ -5,7 +5,29 @@ section:
   - subtitle: Plugins
     copy: Stay away from plugins when you can because they slow down your website. Most likely your theme comes with the functionality you are looking for.
   - subtitle: Speed
-    copy: Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated price to your client.
+    copy: Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated sprice to your client.
+resource:
+  - link: https://www.wp101.com/tutorial/what-is-wordpress/
+    text: WordPress
+    type: Article
+  - link: https://mythemeshop.com/blog/general-wordpress-settings/
+    text: Beginner to Advanced WP Settings
+    type: Article
+  - link: https://premium.wpmudev.org/blog/how-to-create-wordpress-child-theme/
+    text: WordPress Child Theme
+    type: Article
+  - link: https://moz.com/blog/a-beginners-guide-to-the-google-search-console
+    text: Search Console Guide
+    type: Article
+  - link: https://www.wpexplorer.com/easy-tips-wordpress-beginners/
+    text: WP Posts/Blog
+    type: Article
+  - link: https://support.google.com/analytics/answer/1008015?hl=en
+    text: Get Started with Analytics
+    type: Article
+  - link: http://pintsizedsites.com/fixing-wordpress-broken-plugin/
+    text: Fix Broken Plugin Update
+    type: Article
 project:
   - subtitle: Create a WordPress Site
     copy: Use <a class="section__link" href="https://getflywheel.com/" target="_blank">Flywheel</a> to create a WordPress site with a focus on something you're interested in, whether that's a cause, a cute animal, or a random topic. It can be a one page site, or have multiple pages.

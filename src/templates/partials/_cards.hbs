@@ -1,0 +1,12 @@
+{{#each card}}
+<div class="cmp-card">
+  <a href="./{{link}}">
+    <h2 class="cmp-card__title">{{title}}</h2>
+    <ul class="cmp-card__list">
+      {{#each list}}
+      <li class="cmp-card__item">{{item}}</li>
+      {{/each}}
+    </ul>
+  </a>
+</div>
+{{/each}}

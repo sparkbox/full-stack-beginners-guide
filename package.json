@@ -27,10 +27,11 @@
   "homepage": "https://corinneling.github.io/beginners-guide/",
   "devDependencies": {
     "pa11y": "^5.0.4",
-    "stylelint": "^9.6.0",
+    "stylelint": "^9.9.0",
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
+    "@sparkbox/stylelint-config-sparkbox": "^0.2.0",
     "chokidar": "^2.0.4",
     "colors": "^1.3.2",
     "compression": "^1.7.3",
@@ -47,6 +48,7 @@
     "opener": "^1.5.1",
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.2",
+    "stylelint-scss": "^3.4.1",
     "yamljs": "^0.3.0"
   }
 }

@@ -1,0 +1,17 @@
+.cmp-sub-menu {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 2rem auto 4rem;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    float: left;
+    margin: 0 1.5rem;
+  }
+}

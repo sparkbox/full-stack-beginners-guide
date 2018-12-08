@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $default-font;
+  color: $c-grey;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-weight: normal;
+  line-height: 1.75;
+  font-size: 1.125rem;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+::selection {
+  background: $c-grey;
+  color: $c-white;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  overflow: auto;
+  border-radius: 0.5rem;
+  background-color: $c-white;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  box-shadow: $shadow rgba($c-grey-blue, 0.15);
+}
+
+code {
+  font-family: $code-font;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  background-color: $c-white;
+  box-shadow: $dark-shadow rgba($c-black, 0.2);
+}
+
+pre > code {
+  padding: 0;
+  border: none;
+  font-family: $code-font;
+  white-space: pre-wrap;
+  line-height: 2;
+  font-size: 0.75rem;
+  background-color: $c-white;
+  box-shadow: $dark-shadow rgba($c-black, 0);
+}
