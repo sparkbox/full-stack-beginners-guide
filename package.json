@@ -8,11 +8,14 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all -s sass html -p watch server",
+    "prestart": "npm run clean",
+    "start": "npm-run-all -s sass html -p js watch server",
+    "clean": "rimraf dist/",
     "server": "node tasks/server",
     "html": "node tasks/html",
     "stylelint": "node tasks/stylelint",
     "sass": "node tasks/sass",
+    "js": "node tasks/webpack",
     "watch": "node tasks/watch"
   },
   "repository": {
@@ -32,9 +35,15 @@
   },
   "dependencies": {
     "@sparkbox/stylelint-config-sparkbox": "^0.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-preset-env": "^1.7.0",
     "chokidar": "^2.0.4",
     "colors": "^1.3.2",
     "compression": "^1.7.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.3",
     "front-matter": "^2.3.0",
     "globby": "^8.0.1",
@@ -49,6 +58,8 @@
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.2",
     "stylelint-scss": "^3.4.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
     "yamljs": "^0.3.0"
   }
 }
