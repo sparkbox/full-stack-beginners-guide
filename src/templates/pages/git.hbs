@@ -15,7 +15,7 @@ dataFile: common/*
   <div class="obj-layout-spacing theme-bg" id="cheatsheet">
   <h2 class="subtitle">Cheat Sheet</h2>
   {{#markdown}}
-  ### How to set up a GitHub Repo
+  #### How to set up a GitHub Repo
   ```
   touch ReadME.md
   git init
@@ -25,17 +25,20 @@ dataFile: common/*
   git push -u origin master
   ```
 
-  ### Add Changed Files
+  #### Add changed files
   ```
   git status
   git add [name_of_file]
   ```
 
-  ### Local, Remote, and Origin
+  #### Output the branch you are on
   ```
-  // local environment refers to your personal computer
-  // remote refers to an in between state. It's where all of your files are stored when they committed but not yet pushed
-  // origin refers to GitHub's environment
+  git branch | grep \*
+  ```
+
+  #### Output the remote
+  ```
+  git config --get remote.origin.url
   ```
   {{/markdown}}
   </div>

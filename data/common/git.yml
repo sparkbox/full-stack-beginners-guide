@@ -6,6 +6,13 @@ section:
     copy: GitHub is <strong>a development platform that uses git</strong>, where code for projects can be stored. Then other developers can others can easily view and access the code files. Other similar services include GitLab and BitBucket. I personally prefer GitHub because that's the platform I used to learn git. You can <a class="cmp-link" aria-label="Sign up for a GitHub account" href="https://github.com/join" target="_blank">sign up</a> for a free account if you don't already have one. 
   - subtitle: Documentation & Messages
     copy: When working with git and any service like GitHub be aware of <strong>ReadMe, Pull Requests, and Commit Messages.</strong> </p> <ul class="cmp-list"><li class="cmp-list__item"> <strong>Readme</strong>, often seen as ReadME.md, uses markdown syntax and contains documentation about the repo it is a part of. This helps other users understand your repo and your goals regarding it.</li> <li class="cmp-list__item"><strong>Pull Requests</strong> are used with teams and open source communities. On GitHub you can find the Pull Request tab right under the the repo's name. Pull Requests are used to compare changes or additions to code in the repo. To open a pull request for an open source project, fork the repo, use <code>git clone</code> to clone that forked version, make a branch off of master with <code>git checkout branch [branch-name]</code>. After making changes and pushing those up to your forked repo, go to the original repo, and use the Pull Request button to submit your changed code.</li> <li class="cmp-list__item"><strong>Commit Messages</strong> are messages you write in the terminal once you have added files to your remote repo with <code>git add [file-name]</code>. Then use the command <code>git commit -m "put text in single or double quotes"</code> This message will show up in your repo so you know when you made what changes. To make a multi-line message, simple press enter before closing the quotes.</li></ul>
+  - subtitle: Local, Remote, and Origin
+    copy: |
+      <ul class="cmp-list">
+      <li class="cmp-list__item">Local environment refers to your personal computer</li>
+      <li class="cmp-list__item">Remote refers to an in-between state. It's where all of your files are stored when they are committed but not yet pushed</li>
+      <li class="cmp-list__item">Origin refers to GitHub's environment</li>
+      </ul>
 resource:
   - link: https://learngitbranching.js.org/
     text: Learn Git Branching

@@ -4,7 +4,8 @@
 //  Prism.highlightAll();
 
 import hljs from 'highlight.js/lib/highlight';
-import 'highlight.js/styles/atom-one-dark.css'
+import 'highlight.js/styles/nord.css' 
+// import 'highlight.js/styles/atom-one-dark.css'
 
 hljs.initHighlighting();
 

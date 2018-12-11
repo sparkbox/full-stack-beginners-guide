@@ -42,30 +42,29 @@ img {
 }
 
 pre {
-  overflow: auto;
-  border-radius: 0.5rem;
-  background-color: $c-white;
-  margin-bottom: 3rem;
-  padding: 1rem 2rem;
-  box-shadow: $shadow rgba($c-grey-blue, 0.15);
+  background-color: $c-grey;
+  border-radius: 0.25rem;
 }
 
 code {
   font-family: $code-font;
   font-size: 0.875rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.2rem;
-  background-color: $c-white;
-  box-shadow: $dark-shadow rgba($c-black, 0.2);
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.5rem;
+  background: $c-grey;
+  color: #D8DEE9;
 }
 
 pre > code {
-  padding: 0;
+  padding: 1rem !important;
+  color: $c-white;
+  background-color: transparent;
   border: none;
+  border-radius: 0.25rem;
   font-family: $code-font;
   white-space: pre-wrap;
   line-height: 2;
   font-size: 0.75rem;
-  background-color: $c-white;
   box-shadow: $dark-shadow rgba($c-black, 0);
 }

@@ -16,32 +16,29 @@ dataFile: common/*
   <h2 class="subtitle">Cheat Sheet</h2>
   {{#markdown}}
   ### Manipulate Arrays
+
   ```
+  // update an existing array
   for(let i = 0; i < array.length; i++) { 
     // do something with the array data 
   }
   ```
+  
   ```
-  const domElements = document.querySelectorAll('button');
-    domElements.forEach((el) => {
-    el.addEventListener('click', exFunction)
+  // add an event listener to every button
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', functionName)
   });
   ```
+
   ```
-  // make a new from inputs of their values
+  // make a new array from input values
   const inputs = document.querySelectorAll('inputs');
   let arr = Array.from(inputs).map(inputs => inputs.value);
   ```
-  ### Debugging
-  ```
-  // add a console.logs
-  const doesThing = () => {
-  console.log('doesThing ran');
-  // for loop
-  console.log('for loop ran');
-  }
-  ```
-  ### Export
+ 
+  ### Export a Function
   ```
   module.exports = functionName;
   ```
