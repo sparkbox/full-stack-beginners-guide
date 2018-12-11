@@ -1,4 +1,13 @@
-console.log('hi');
+// import Prism from 'prismjs'
+// import 'prismjs/themes/prism-tomorrow.css'
+
+//  Prism.highlightAll();
+
+import hljs from 'highlight.js/lib/highlight';
+import 'highlight.js/styles/atom-one-dark.css'
+
+hljs.initHighlighting();
+
 
 import smoothScroll from './smoothScroll';
 
