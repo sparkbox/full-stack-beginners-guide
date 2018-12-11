@@ -10,12 +10,14 @@
   "scripts": {
     "prestart": "npm run clean",
     "start": "npm-run-all -s sass html -p js watch server",
+    "build": "npm-run-all -s sass html js:prod",
     "clean": "rimraf dist/",
     "server": "node tasks/server",
     "html": "node tasks/html",
     "stylelint": "node tasks/stylelint",
     "sass": "node tasks/sass",
     "js": "node tasks/webpack",
+    "js:prod": "webpack --colors --display-chunks",
     "watch": "node tasks/watch"
   },
   "repository": {
