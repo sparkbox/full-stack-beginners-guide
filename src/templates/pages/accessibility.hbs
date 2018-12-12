@@ -13,24 +13,42 @@ dataFile: common/*
     {{> _resources a11y}}
 
   <div class="obj-layout-spacing theme-bg" id="cheatsheet">
-  <h2 class="subtitle">Cheat Sheet</h2>
+  <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
   {{#markdown}}
   ### Attributes
+
+  Add an aria-label a link that doesn't have descriptive text
   ```
   aria-label="Explain what the screen reader should read"
-  // add to a link that doesn't have descriptive text
   ```
+
+  Aria-expanded tells a screen reader if an element, such as a hamburger menu, is open or closed
   ```
   aria-expanded="true"
-  // tells a screen reader if an element, such as a hamburger menu, is opened or closed
   ```
+
+  Always have an alt attribute in an img tags
   ```
   alt="Explain what your picture is showing"
-  // always have an alt attribute in img tags
   ```
+
+  Hide excessive or decorative elements from a screen reader
   ```
   aria-hidden="true"
-  // hide an element from a screen reader such as a decorative elements
+  ```
+
+  **Toggle Aria Attribute**
+  For changing aria attribute values when a user interacts with an element such as an FAQ toggle or collapsed navigation
+  ```
+  export const toggleAria = (el, ariaAttr) => {
+    let attr = el.getAttribute(`${ariaAttr}`);
+    if (attr === 'false') {
+      attr = 'true';
+    } else {
+      attr = 'false';
+    }
+    el.setAttribute(`${ariaAttr}`, attr);
+  };
   ```
   {{/markdown}}
   </div>

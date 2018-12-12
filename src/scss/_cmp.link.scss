@@ -2,6 +2,7 @@
   color: $c-yonder;
   position: relative;
   padding: 0.25rem;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
   transition: color $transition;
 
@@ -29,5 +30,10 @@
     height: 100%;
     transform: scale(1.05, 1);
     background: linear-gradient(90deg, $c-yonder 0%, $c-blue-skies  100%);
+  }
+
+  &--dark:hover {
+    color: $c-grey;
+    text-decoration: underline;
   }
 }

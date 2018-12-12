@@ -13,27 +13,24 @@ dataFile: common/*
   {{> _resources js}}
 
   <div class="obj-layout-spacing theme-bg" id="cheatsheet">
-  <h2 class="subtitle">Cheat Sheet</h2>
+  <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
   {{#markdown}}
   ### Manipulate Arrays
-
+  Update an existing array
   ```
-  // update an existing array
   for(let i = 0; i < array.length; i++) { 
     // do something with the array data 
   }
   ```
-  
+  Add an event listener to every button
   ```
-  // add an event listener to every button
   const buttons = document.querySelectorAll('button');
   buttons.forEach((btn) => {
     btn.addEventListener('click', functionName)
   });
   ```
-
+  Make a new array from input values
   ```
-  // make a new array from input values
   const inputs = document.querySelectorAll('inputs');
   let arr = Array.from(inputs).map(inputs => inputs.value);
   ```
