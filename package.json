@@ -51,6 +51,7 @@
     "front-matter": "^2.3.0",
     "globby": "^8.0.1",
     "handlebars": "^4.0.12",
+    "handlebars-layouts": "^3.1.4",
     "helmet": "^3.13.0",
     "helper-markdown": "^1.0.0",
     "highlight.js": "^9.13.1",

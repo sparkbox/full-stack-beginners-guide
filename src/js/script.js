@@ -1,16 +1,8 @@
-// import Prism from 'prismjs'
-// import 'prismjs/themes/prism-tomorrow.css'
-
-//  Prism.highlightAll();
-
 import hljs from 'highlight.js/lib/highlight';
 import 'highlight.js/styles/nord.css' 
-// import 'highlight.js/styles/atom-one-dark.css'
+import smoothScroll from './smoothScroll';
 
 hljs.initHighlighting();
-
-
-import smoothScroll from './smoothScroll';
 
 const scrollLinks = document.querySelectorAll('.js-smooth-scroll');
 

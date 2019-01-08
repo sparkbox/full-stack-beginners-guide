@@ -2,49 +2,23 @@
 layoutFile: default
 dataFile: common/*
 ---
+{{#extend "layout"}}
+  {{#content "head"}}
+    <title>Learn How to Use Git & GitHub for Free | Beginner Web Development</title>
+    <meta name="description" content="Understand dotfiles through code examples and approachable projects. Create a more efficient work environment using bash, the command line, and git.">
+  {{/content}}
 
-{{> _header}}
+  {{#content "body"}}
+    {{> _header}}
+    <main class="obj-layout-width">
+      <h1 class="cmp-title">Git & GitHub</h1>
+      {{> _sub-menu}}
+      {{> _summary git}}
+      {{> _resources git}}
+{{> _cheatsheet git}}
+      {{> _projects git}}
+    </main>
+    {{> _footer}}
+  {{/content}}
 
-<main class="obj-layout-width">
-  <h1 class="cmp-title">Git & GitHub</h1>
-
-  {{> _sub-menu}}
-  {{> _summary git}}
-  {{> _resources git}}
-
-  <div class="obj-layout-spacing theme-bg" id="cheatsheet">
-  <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
-  {{#markdown}}
-  #### How to set up a GitHub Repo
-  ```
-  touch ReadME.md
-  git init
-  git add ReadME.md
-  git commit -m "first commit"
-  git remote add origin [github_repo_url]
-  git push -u origin master
-  ```
-
-  #### Add changed files
-  ```
-  git status
-  git add [name_of_file]
-  ```
-
-  #### Output the branch you are on
-  ```
-  git branch | grep \*
-  ```
-
-  #### Output the remote
-  ```
-  git config --get remote.origin.url
-  ```
-  {{/markdown}}
-  </div>
-
-  {{> _projects git}}
-
-</main>
-
-{{> _footer}}
+{{/extend}}
