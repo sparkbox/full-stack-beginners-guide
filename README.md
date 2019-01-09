@@ -18,4 +18,4 @@ This guide includes the following topics:
 This project is hosted through Netlify, which deploys master.
 
 ### Contribute
-To contribute please read through the [contributing guidelines](https://github.com/corinneling/beginners-guide/blob/master/.github/CONTRIBUTING.md). 
+To contribute please read through the [contributing guidelines](https://github.com/sparkbox/full-stack-beginners-guide/blob/master/.github/CONTRIBUTING.md). 
