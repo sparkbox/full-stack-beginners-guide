@@ -8,3 +8,6 @@ node_modules/
 dist/
 dist/*
 src/css/
+
+# Mac Stuff
+.DS_Store
