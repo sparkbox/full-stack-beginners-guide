@@ -1,5 +1,5 @@
 # A Beginner's Guide to Learning Full Stack Web Development
-### Inspired by Sparkbox's Full Stack Apprenticeship**
+### Inspired by Sparkbox's Full Stack Apprenticeship
 Online content designed to enable and encourage self-sufficiency, participation, and collaboration.
   
 ### About
