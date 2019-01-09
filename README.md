@@ -1,8 +1,9 @@
-# A Beginner's Guide to Learning Web Development
+# A Beginner's Guide to Learning Full Stack Web Development
+**Inspired by Sparkbox's Full Stack Apprenticeship**
 Online content designed to enable and encourage self-sufficiency, participation, and collaboration.
   
 ### About
-The goal for the beginner's guide is to create materials that encourage people to learn and build amazing things. Only when we give everyone the tools to learn and create will the web be diverse and bias free. With this guide, I hope to create an inclusive environment where those interested in developing their programming skills can learn in a safe, open space, while providing the same mentorship style that SparkBox has offered me.
+The goal for the beginner's guide is to create materials that encourage people to learn and build amazing things. Only when we give everyone the tools to learn and create will the web be diverse and bias free. With this guide, I hope to create an inclusive environment where those interested in developing their programming skills can learn in a safe, open space, while providing the same mentorship style that Sparkbox has offered me.
 
 ### Topics
 This guide includes the following topics:

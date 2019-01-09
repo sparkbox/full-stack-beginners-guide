@@ -15,43 +15,43 @@ dataFile: common/*
       {{> _sub-menu}}
       {{> _summary dotfiles}}
       {{> _resources dotfiles}}
-      <div class="obj-layout-spacing theme-bg" id="cheatsheet">
-      <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
-      {{#markdown}}
-      #### Create a dotfile
-      ```
-      touch .bashrc
-      ```
+<div class="obj-layout-spacing theme-bg" id="cheatsheet">
+<h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
+{{#markdown}}
+#### Create a dotfile
+```
+touch .bashrc
+```
 
-      #### Refresh bash to see changes
-      ```
-      source ~/.bashrc
-      ```
+#### Refresh bash to see changes
+```
+source ~/.bashrc
+```
 
-      #### Aliases
-      After setting up the following aliases running *c* in your terminal will be the same as running *clear*, and so on
-      ```
-      alias c="clear"
-      alias ll="ls -lha"
-      alias gs="git status"
-      alias ga="git add"
-      alias gc="git commit -m"
-      ```
-      #### Functions
-      Make a directory and navigate to it
-      ```
-      function mkd () {
-        mkdir -p "$@" && cd "$@"
-      }
-      ```
-      Congratulate yourself with a happy dance
-      ```
-      function happydance {
-        echo ' ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓'
-      }
-      ```
-      {{/markdown}}
-      </div>
+#### Aliases
+After setting up the following aliases running *c* in your terminal will be the same as running *clear*, and so on
+```
+alias c="clear"
+alias ll="ls -lha"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
+```
+#### Functions
+Make a directory and navigate to it
+```
+function mkd () {
+  mkdir -p "$@" && cd "$@"
+}
+```
+Congratulate yourself with a happy dance
+```
+function happydance {
+  echo ' ┏(-_-)┛ ┗(-_-﻿ )┓ ┗(-_-)┛ ┏(-_-)┓'
+}
+```
+{{/markdown}}
+</div>
       {{> _projects dotfiles}}
     </main>
     {{> _footer}}

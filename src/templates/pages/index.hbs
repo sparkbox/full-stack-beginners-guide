@@ -1,30 +1,36 @@
 ---
 layoutFile: default
-dataFile: common/home
+dataFile: common/*
 ---
-{{> _header}}
+{{#extend "layout"}}
+  {{#content "head"}}
+    <title>Level Up Your Full Stack Web Development Skills for Free</title>
+    <meta name="description" content="Web development content based on project based learning compiled during Sparkbox's Full Stack Apprenticeship.">
+  {{/content}}
 
-<main>
-  <section class="obj-layout-width">
-    <div class="obj-layout-row">
-      <h1>Full Stack Beginner's Guide</h1>
-      <ul class="cmp-list cmp-list--hrz">
-        <li class="cmp-list__item">Quick explanations</li>
-        <li class="cmp-list__item">Cheat Sheets</li>
-        <li class="cmp-list__item">External Resources</li>
-        <li class="cmp-list__item">Projects</li>
-      </ul>
-      <p>This guide is made for those with a fast paced life, looking for a job in web development. This beginner's guide
-      is focused on approachable projects to help you gain the skills needed to become a web developer. 
-      Each section contains a brief summary of the topic, a list of external resources I have used and 
-      found the most helpful, a small cheat sheet, and project prompts.
-      </p>
-    </div>
-    <div class="obj-layout-columns">
-      {{> _cards home}}
-    </div>
-  </section>
-</main>
-
-  {{> _footer}}
-
+  {{#content "body"}}
+    {{> _header}}
+    <main>
+      <section class="obj-layout-width">
+        <div class="obj-layout-row">
+          <h1>Full Stack Beginner's Guide</h1>
+          <ul class="cmp-list cmp-list--hrz">
+            <li class="cmp-list__item">Quick explanations</li>
+            <li class="cmp-list__item">Cheat Sheets</li>
+            <li class="cmp-list__item">External Resources</li>
+            <li class="cmp-list__item">Projects</li>
+          </ul>
+          <p>This guide is made for those with a fast paced life, looking for a job in web development. This beginner's guide
+          is focused on approachable projects to help you gain the skills needed to become a web developer. 
+          Each section contains a brief summary of the topic, a list of external resources I have used and 
+          found the most helpful, a small cheat sheet, and project prompts.
+          </p>
+        </div>
+        <div class="obj-layout-columns">
+          {{> _cards home}}
+        </div>
+      </section>
+    </main>
+    {{> _footer}}
+  {{/content}}
+{{/extend}}

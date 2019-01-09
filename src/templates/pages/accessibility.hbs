@@ -2,16 +2,19 @@
 layoutFile: default
 dataFile: common/*
 ---
+{{#extend "layout"}}
+  {{#content "head"}}
+    <title>Learn How to Use Git & GitHub for Free | Full Stack Web Development</title>
+    <meta name="description" content="Understand how git and GitHub work together to feel confident using a git workflow to collaborate on a daily basis.">
+  {{/content}}
 
-{{> _header}}
-
-  <main class="obj-layout-width">
-    <h1 class="cmp-title">Accessibility</h1>
-
-    {{> _sub-menu}}
-    {{> _summary a11y}}
-    {{> _resources a11y}}
-
+  {{#content "body"}}
+    {{> _header}}
+    <main class="obj-layout-width">
+      <h1 class="cmp-title">Accessibility</h1>
+      {{> _sub-menu}}
+      {{> _summary a11y}}
+      {{> _resources a11y}}
   <div class="obj-layout-spacing theme-bg" id="cheatsheet">
   <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
   {{#markdown}}
@@ -52,9 +55,8 @@ dataFile: common/*
   ```
   {{/markdown}}
   </div>
-    
-    {{> _projects a11y}}
-
-  </main>
-  
-{{> _footer}}
+      {{> _projects a11y}}
+    </main>
+  {{> _footer}}
+  {{/content}}
+{{/extend}}

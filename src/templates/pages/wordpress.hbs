@@ -2,52 +2,57 @@
 layoutFile: default
 dataFile: common/*
 ---
+{{#extend "layout"}}
+  {{#content "head"}}
+    <title>Learn How to Use Git & GitHub for Free | Full Stack Web Development</title>
+    <meta name="description" content="Understand how git and GitHub work together to feel confident using a git workflow to collaborate on a daily basis.">
+  {{/content}}
 
-{{> _header}}
-
-<main class="obj-layout-width">
-  <h1 class="cmp-title">WordPress</h1>
-
-  {{> _sub-menu}}
-  {{> _summary wordpress}}
-  {{> _resources wordpress}}
-
-  <div class="obj-layout-spacing theme-bg" id="cheatsheet">
-    <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
-      <h3>Plugins</h3>
-      <dl>
-        <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a></dt>
-        <dd><p>significantly helps with speed, follow these <a class="cmp-link cmp-link--dark" href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a></p></dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/imagify/" target="_blank">Imagify</a></dt>
-        <dd><p>Helps with speed by compressing images</p></dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">Yoast</a></dt>
-        <dd><p>Helps with your website's SEO settings</p></dd>
-      </dl>
-      <h3>Themes</h3>
-      <dl>
-        <dt><a class="cmp-link cmp-link--dark" href="https://themeforest.net/free/wordpress-themes" target="_blank">Themeforest</a></dt>
-        <dd><p>A great resource for paid themes</p></dd>
-      </dl>
-      <h3>Hosting</h3>
-      <dl>
-        <dt><a class="cmp-link cmp-link--dark" href="https://getflywheel.com/" target="_blank">Flywheel</a></dt>
-        <dd><p>Great for local development</p></dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://www.godaddy.com/" target="_blank">GoDaddy</a></dt>
-        <dd><p>Reliable and easy to use. There is also a cool feature they offer for <a class="cmp-link cmp-link--dark" href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> websites</p>
-        </dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://www.bluehost.com/" target="_blank">Bluehost</a></dt>
-        <dd><p>Good pricing and easy to use</p></dd>
-      </dl>
-      <h3>Speed Tests</h3>
-      <dl>
-        <dt><a class="cmp-link cmp-link--dark" href="https://www.pingdom.com/" target="_blank">Pingdom</a></dt>
-        <dd><p>Focuses on speed and site health</p></dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Page Speed Insights</a></dt>
-        <dd><p>Focuses on site health</p></dd>
-        <dt><a class="cmp-link cmp-link--dark" href="https://gtmetrix.com/" target="_blank">GT Metrix</a></dt>
-        <dd><p>Focuses on site speed</p></dd>
-      </dl>
-  </div>
-  {{> _projects wordpress}}
-</main>
-{{> _footer}}
+  {{#content "body"}}
+    {{> _header}}
+    <main class="obj-layout-width">
+      <h1 class="cmp-title">WordPress</h1>
+      {{> _sub-menu}}
+      {{> _summary wordpress}}
+      {{> _resources wordpress}}
+      <div class="obj-layout-spacing theme-bg" id="cheatsheet">
+        <h2 class="cmp-subtitle cmp-subtitle--theme">Cheat Sheet</h2>
+          <h3>Plugins</h3>
+          <dl>
+            <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/w3-total-cache/" target="_blank">W3 Total Cache</a></dt>
+            <dd><p>significantly helps with speed, follow these <a class="cmp-link cmp-link--dark" href="http://www.onlinemediamasters.com/w3-total-cache-settings/" target="_blank">instructions</a></p></dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/imagify/" target="_blank">Imagify</a></dt>
+            <dd><p>Helps with speed by compressing images</p></dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">Yoast</a></dt>
+            <dd><p>Helps with your website's SEO settings</p></dd>
+          </dl>
+          <h3>Themes</h3>
+          <dl>
+            <dt><a class="cmp-link cmp-link--dark" href="https://themeforest.net/free/wordpress-themes" target="_blank">Themeforest</a></dt>
+            <dd><p>A great resource for paid themes</p></dd>
+          </dl>
+          <h3>Hosting</h3>
+          <dl>
+            <dt><a class="cmp-link cmp-link--dark" href="https://getflywheel.com/" target="_blank">Flywheel</a></dt>
+            <dd><p>Great for local development</p></dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://www.godaddy.com/" target="_blank">GoDaddy</a></dt>
+            <dd><p>Reliable and easy to use. There is also a cool feature they offer for <a class="cmp-link cmp-link--dark" href="https://www.godaddy.com/pro/sites">managing multiple WordPress</a> websites</p>
+            </dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://www.bluehost.com/" target="_blank">Bluehost</a></dt>
+            <dd><p>Good pricing and easy to use</p></dd>
+          </dl>
+          <h3>Speed Tests</h3>
+          <dl>
+            <dt><a class="cmp-link cmp-link--dark" href="https://www.pingdom.com/" target="_blank">Pingdom</a></dt>
+            <dd><p>Focuses on speed and site health</p></dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">Page Speed Insights</a></dt>
+            <dd><p>Focuses on site health</p></dd>
+            <dt><a class="cmp-link cmp-link--dark" href="https://gtmetrix.com/" target="_blank">GT Metrix</a></dt>
+            <dd><p>Focuses on site speed</p></dd>
+          </dl>
+      </div>
+      {{> _projects wordpress}}
+    </main>
+    {{> _footer}}
+  {{/content}}
+{{/extend}}

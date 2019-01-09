@@ -1,5 +1,6 @@
 const path = require('path');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
@@ -27,6 +28,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new MinifyPlugin()
+    new MinifyPlugin(),
+    new CopyWebpackPlugin([
+      {from:'src/img',to:'../img'} 
+  ]),
   ]
 };

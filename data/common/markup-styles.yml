@@ -1,4 +1,4 @@
-topic: Markup and Styles
+topic: HTML and CSS
 section:
   - subtitle: HTML
     copy: HTML, or Hyper Text Markup Language, is the foundation of your site, it's the skeleton that holds all of the pieces together; it <strong>sets the structure for your content</strong>. The structure of HTML is similar to how a titles and paragraphs are set up in a document. The most important things are placed at the top of the document, or in this case the web page. Then HTML uses semantic tags to tell the page whether an item is a heading, a bulleted list, regular text, etc. With HTML you should have the same mindset as you would when writing an essay or taking notes. Yet, use different semantics to structure the content so the browsers can read through and understand what kind of content you are creating.

@@ -1,5 +1,4 @@
 .cmp-nav {
-  height: 4rem;
   background: $c-grey;
 
   @media (min-width: $bp-md) {
@@ -17,24 +16,31 @@
   &__item {
     text-align: center;
 
-    @media (min-width: $bp-md) {
-      width: auto;
-      padding: 0 1rem;
+    & + & {
+      padding-left: 2rem;
     }
   }
 
   &__link {
-    color: $c-yonder;
+    color: $c-white;
     padding: 0.25rem 0;
     letter-spacing: 0.0625rem;
-    text-transform: uppercase;
     font-weight: bold;
     border-bottom: 0.125rem solid $c-white;
     transition: color $transition, border-color $transition;
 
+    @media (min-width: $bp-md) {
+      color: $c-yonder;
+    }
+
     &:hover {
-      color: $c-grey;
-      border-color: $c-grey;
+      color: $c-yonder;
+      border-color: $c-yonder;
+
+      @media (min-width: $bp-md) {
+        color: $c-grey;
+        border-color: $c-grey;
+      }
     }
   }
 }
