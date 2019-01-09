@@ -17,12 +17,6 @@ resource:
   - link: https://learngitbranching.js.org/
     text: Learn Git Branching
     type: Exercise
-  - link: https://try.github.io/levels/1/challenges/1
-    text: Try Git
-    type: Exercise
-  - link: https://github.com/jehna/Articleme-best-practices
-    text: Best ArticleMe Practices
-    type: Article
   - link: https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
     text: Git
     type: Cheat sheet
@@ -46,7 +40,7 @@ resource:
     type: Article
   - link: https://gist.github.com/corinneling/c027da69442ea08c5e67e71f72afe3c8
     text: Sync A Forked Repo
-    type: Gist of Mine
+    type: Gist
 project:
   - subtitle: Contribute to this website
     copy: You will need a basic understanding of html and css. Go to <a class="cmp-link" href="https://github.com/corinneling/beginners-guide" target="_blank">this repository</a>, or repo, on GitHub. Fork the repo, clone it, and add something you've learned about web development ot the bottom of the ReadME.md. And, if there are any issues in the Issue tab, comment that you will be working on it. and start tackling the issue.

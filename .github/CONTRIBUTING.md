@@ -44,7 +44,12 @@ Every additional design and functionality should go into making this site as app
 Prefix your commit with the commit category: `feat:`, `docs:`, `fix:`, or `chore`
 Use the present tense 'adds' or 'updates'
 Consider starting the commit message with an applicable emoji:
+
+  ✨ `:sparkles:` when improving structure/format
+
   🎨 `:art:` when adding or updating styles
+
+  📚 `:books:` when adding or updating content
 
   ⚡️ `:zap:` when adding or updating markup
 

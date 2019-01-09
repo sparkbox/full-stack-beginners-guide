@@ -1,35 +1,35 @@
 card:
-  - link: git
+  - link: learn-git
     title: Git & GitHub
     list:
       - item: Documentation
       - item: Contribute
       - item: Workflow
-  - link: dotfiles
+  - link: learn-dotfiles
     title: Dotfiles
     list:
       - item: Set up
       - item: Functions
       - item: Aliases
-  - link: markup-styles
+  - link: learn-html-css
     title: HTML & CSS
     list:
       - item: Semantic Tags
       - item: CSS Layout
       - item: Naming
-  - link: javascript
+  - link: learn-javascript
     title: JavaScript
     list:
-      - item: Functional
-      - item: Object Oriented
-      - item: Classes
-  - link: accessibility
+      - item: ES6
+      - item: Arrays
+      - item: Katas
+  - link: learn-accessibility
     title: Accessibility
     list:
       - item: Forms
       - item: Aria
       - item: Color Contrast
-  - link: wordpress
+  - link: learn-wordpress
     title: WordPress
     list:
       - item: Plugins

@@ -10,7 +10,7 @@ resource:
   - link: https://seesparkbox.com/foundry/accessible_by_design
     text: A11y By Design
     type: Article
-  - link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Ud_the_aria-label_attribute
+  - link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute
     text: Aria-label
     type: Article
   - link: https://webaim.org/techniques/forms/advanced
@@ -24,9 +24,6 @@ resource:
     type: Article
   - link: https://usecontrast.com/guide
     text: Contrast Guide
-    type: Article
-  - link: https://internedishard.com/html-and-css/semantic-html/
-    text: Semantic HTML
     type: Article
   - link: http://pa11y.org/
     text: Pa11y

@@ -1,5 +1,5 @@
 # A Beginner's Guide to Learning Full Stack Web Development
-**Inspired by Sparkbox's Full Stack Apprenticeship**
+### Inspired by Sparkbox's Full Stack Apprenticeship**
 Online content designed to enable and encourage self-sufficiency, participation, and collaboration.
   
 ### About
@@ -10,7 +10,7 @@ This guide includes the following topics:
 * **Git and GitHub**: Documentation and workflow
 * **Dotfiles**: Setups, functions, and aliases
 * **HTML & CSS**: Semantic tags, CSS layout, and naming
-* **JavaScript**: Functional object-oriented classes
+* **JavaScript**: ES6, Arrays, and Katas
 * **Accessibility**: Forms, aria, and color contrast
 * **Wordpress**: Plugins, speed, and themes
 

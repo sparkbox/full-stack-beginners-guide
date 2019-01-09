@@ -18,7 +18,7 @@ resource:
     type: Article
   - link: https://github.com/ashleynolan/dotfiles/blob/master/.functions
     text: Functions
-    type: Example
+    type: Examples
   - link: https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
     text: Getting Started with Dotfiles
     type: Article
@@ -33,7 +33,7 @@ resource:
     type: Cheat sheet
   - link: https://gist.github.com/corinneling/ae3ce3885495115c9d39f0ef802af435
     text: Understanding Dotfiles
-    type: Gist of Mine
+    type: Gist
 project:
   - subtitle: Create your own dotfiles
     copy: Take a look at <a class="cmp-link" href="https://dotfiles.github.io/" target="_blank">some dotfile repositories</a>, and start creating your own aliases and functions. Start small, add new ones as you work on projects, and don't be afraid to be creative. If using bash, you will want <code>.bashrc, .bash_profile, .bash_prompt, .aliases, and .functions</code> files.
