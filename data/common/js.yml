@@ -3,9 +3,9 @@ section:
   - subtitle: JS
     copy: JavaScript is a <strong>scripting language</strong> on the client side of web pages that allows developers to create dynamically generated content through object oriented or functional programming patterns.
   - subtitle: The DOM
-    copy: The DOM, or the Document Object Model, is where your code runs in the browser. JS and the DOM have a close relationship, since JS can call and store html elements in the browser and manipulate them. One of the most common ways of doing this is adding an <code> eventListener</code>. A good way to start working with JS is by adding an eventListener to a button and assigning that event a function that provides some feedback, such as a <code>console.log</code> message.
+    copy: The DOM, or the Document Object Model, is where your code runs in the browser. JS and the DOM have a close relationship, since JS can call and store html elements in the browser and manipulate them. One of the most common ways of doing this is by using an <code> eventListener</code>. A good way to start working with JS is by adding an eventListener to a button and assigning that event a function that provides some feedback, such as a <code>console.log</code> message.
   - subtitle: Run JS
-    copy: Run your JS by referencing an external script file. Add this file as a script tag at the end of your html document. Your can then use ES6 imports to separate different aspects of your program in different files. This will make it easier to catch bugs and stay organized. Be aware that many articles online do not use ES6, yet that is the standard now.
+    copy: Run your JS by referencing an external script file. Add this file as a script tag at the end of your html document. Your can then use ES6 imports to separate different aspects of your program in different files. This will make it easier to catch bugs and stay organized. Be aware that many articles online do not use ES6.
 resource:
   - link: http://eloquentjavascript.net/
     text: Eloquent JS

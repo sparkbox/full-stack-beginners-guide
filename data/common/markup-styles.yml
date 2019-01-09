@@ -1,9 +1,9 @@
 topic: HTML and CSS
 section:
   - subtitle: HTML
-    copy: HTML, or Hyper Text Markup Language, is the foundation of your site, it's the skeleton that holds all of the pieces together; it <strong>sets the structure for your content</strong>. The structure of HTML is similar to how a titles and paragraphs are set up in a document. The most important things are placed at the top of the document, or in this case the web page. Then HTML uses semantic tags to tell the page whether an item is a heading, a bulleted list, regular text, etc. With HTML you should have the same mindset as you would when writing an essay or taking notes. Yet, use different semantics to structure the content so the browsers can read through and understand what kind of content you are creating.
+    copy: HTML, or Hyper Text Markup Language, is the foundation of your site. It's the skeleton that holds all of the pieces together; it <strong>sets the structure for your content</strong>. The structure of HTML is similar to how a titles and paragraphs are set up in a document. The most important things are placed at the top of the document, or in this case the web page. Then HTML uses semantic tags to tell the page whether an item is a heading, a bulleted list, regular text, etc. With HTML you should have the same mindset as you would when writing an essay or taking notes. Yet, use different semantics to structure the content so the browsers can read through and understand what kind of content you are creating.
   - subtitle: CSS
-    copy: CSS, or Cascading Style Sheets, are what make your content approachable. By using styles to shape your content <strong>you can communicate with users</strong> what the most important part of a page is. For example, while the first header, or the h1, might be at the top of the document, a call to action button might be what you want the user to interact with. Styles can be used to enlarge the button, give it a bright color, or some animation. CSS lets you communicate with your users on how to navigate parts of a website without having to explicitly tell them.
+    copy: CSS, or Cascading Style Sheets, is what makes your content approachable. By using styles to shape your content <strong>you can communicate with users</strong> what the most important part of a page is. For example, while the first header, or the h1, might be at the top of the document, a call to action button might be what you want the user to interact with. Styles can be used to enlarge the button, give it a bright color, or some animation. CSS lets you communicate with your users on how to navigate parts of a website without having to explicitly tell them.
 resource:
   - link: https://caniuse.com/
     text: Can I Use
@@ -40,6 +40,6 @@ resource:
     type: Article
 project:
   - subtitle: Create A Webpage in CodePen
-    copy: Choose a topic you are interested in, and create some content for a webpage. Then use semantic tags to create the structure, and CSS to style it. Make sure the page is accessible, responsive, and approachable.
+    copy: Choose a topic you are interested in, and create some content for a webpage with a <a class="cmp-link" href="https://codepen.io/pro/projects">CodePen project</a>. Then set up semantic tags to create the structure, and CSS to style it. Make sure the page is accessible, responsive, and approachable.
   - subtitle: Transfer a Design to Code
-    copy: Search for a fun website element on drizzle or behance. Once you have found something that looks interesting, create a CodePen and recreate that design with code. Make sure to attribute the designer.
+    copy: Search for a fun website element on <a class="cmp-link" href="https://dribbble.com/">Dribble</a> or <a class="cmp-link" href="https://www.behance.net/">Behance</a>. Once you have found something that looks interesting, create a CodePen and recreate that design with code. Make sure to attribute the designer.

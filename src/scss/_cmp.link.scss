@@ -15,6 +15,15 @@
     color: $c-white;
     box-shadow:
       inset 0 -0.175rem $c-white,
-      inset 0 -1.65rem $c-yonder;
+      inset 0 -1.6rem $c-yonder;
+  }
+
+  &--tall {
+    &:hover {
+      color: $c-white;
+      box-shadow:
+        inset 0 -0.175rem $c-white,
+        inset 0 -2.125rem $c-yonder;
+    }
   }
 }

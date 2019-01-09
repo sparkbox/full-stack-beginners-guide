@@ -5,7 +5,7 @@ section:
   - subtitle: Plugins
     copy: Stay away from plugins when you can because they slow down your website. Most likely your theme comes with the functionality you are looking for.
   - subtitle: Speed
-    copy: Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated sprice to your client.
+    copy: Speed tests are helpful when doing a speed audit. This can be for a website you have created, or one you are taking over. If you want to speed up a website after an audit, give an estimated price to your client.
 resource:
   - link: https://www.wp101.com/tutorial/what-is-wordpress/
     text: WordPress

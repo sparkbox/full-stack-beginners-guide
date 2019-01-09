@@ -1,6 +1,6 @@
 topic: Accessibility
 section: 
-  - subtitle: A11y in Mind
+  - subtitle: Accessibility in Mind
     copy: Accessibility, commonly shortened to a11y, may seem foreign at first but with some practice can become a part of day to day development. When building with accessibility keep in mind there are many different types of web accessibility, from visual to screen readers. Also, as you become more comfortable with creating accessible websites, you may come to realize, as I did, that accessibility and beautiful websites can go hand in hand. 
   - subtitle: Visual
     copy: Color contrast, typography, spacing, and boldness contribute to visual accessibility. When building your website be sure to test color contrast, choose a readable font, make headers bold, and set readable letter-spacing and line-height.
@@ -45,6 +45,6 @@ resource:
     type: Cheat Sheet
 project:
   - subtitle: Test a website
-    copy: Choose a website you use the most, and try to use only the keyboard to navigate through it. Then use a screen reader, Voice Over and NVDA are both free options, to go through the website. This will help you understand what is best practice when building an accessible website.
-  - subtitle: Create an a11y element on CodePen
-    copy: Choose a website feature such as a form, a hamburger menu, an FAQ section etc. Use semantic  HTML, then style it with passing contrasting colors, and a readable font. Then make sure to add accessible attributes such as aria-labels on links and alt tags on images.
+    copy: Choose a website you use the most, and use your <a class="cmp-link" href="https://webaim.org/techniques/keyboard/">keyboard to navigate</a> through it. Then use a screen reader, <a class="cmp-link" href="https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts">Voice Over</a> and <a class="cmp-link" href="https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts">NVDA</a> are both free options, to go through the website. This will help you understand how content should be structured and shown when building an accessible website.
+  - subtitle: Create an accessible element on CodePen
+    copy: Choose a website feature such as a form, a hamburger menu, an FAQ section etc and build it out in CodePen. Use semantic  HTML, then style it with passing contrasting colors, and a readable font. Make sure to add accessible attributes such as aria-labels on links and alt tags on images.
