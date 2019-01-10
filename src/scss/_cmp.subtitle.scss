@@ -1,6 +1,9 @@
 .cmp-subtitle {
   font-weight: normal;
-  text-align: center;
+
+  @media (min-width: 32rem) {
+    text-align: center;
+  }
 
   &--theme {
     color: $c-yonder;

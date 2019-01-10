@@ -1,8 +1,12 @@
 .cmp-sub-menu {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  margin: 2rem auto 4rem;
+  display: none;
+
+  @media (min-width: 32rem) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem auto 4rem;
+  }
 
   &__list {
     margin: 0;

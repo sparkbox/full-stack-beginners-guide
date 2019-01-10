@@ -1,5 +1,8 @@
 .obj-layout-width {
   max-width: 74rem;
   margin: auto;
-  padding: 0 2rem;
+
+  @media (min-width: 32rem) {
+    padding: 0 2rem;
+  }
 }
