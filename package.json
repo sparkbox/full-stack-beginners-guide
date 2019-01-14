@@ -1,5 +1,5 @@
 {
-  "name": "beginners-guide",
+  "name": "full-stack-guide",
   "version": "1.0.0",
   "engines": {
     "node": "8.9.1"
@@ -22,14 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corinneling/beginners-guide.git"
+    "url": "git+https://github.com/sparkbox/full-stack-beginners-guide.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/corinneling/beginners-guide/issues"
+    "url": "https://github.com/sparkbox/full-stack-beginners-guide/issues"
   },
-  "homepage": "https://corinneling.github.io/beginners-guide/",
   "devDependencies": {
     "pa11y": "^5.0.4",
     "stylelint": "^9.9.0",
