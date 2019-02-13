@@ -38,6 +38,9 @@ resource:
   - link: http://alistapart.com/article/understandingprogressiveenhancement
     text: Progressive Enhancement
     type: Article
+  - link: https://css-tricks.com/where-do-you-learn-html-css-in-2019/
+    text: Learn HTML & CSS in 2019
+    type: Article
 project:
   - subtitle: Create A Webpage in CodePen
     copy: Choose a topic you are interested in, and create some content for a webpage with a <a class="cmp-link" href="https://codepen.io/pro/projects">CodePen project</a>. Then set up semantic tags to create the structure, and CSS to style it. Make sure the page is accessible, responsive, and approachable.
